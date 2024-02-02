@@ -1,0 +1,62 @@
+@font-face {
+    font-family: 'Larsseit';
+    src:url(../font/larsseit-regular-webfont.eot);
+    src:url(../font/larsseit-regular-webfont.eot?#iefix) format('embedded-opentype'),
+        url(../font/larsseit-regular-webfont.woff2) format('woff2'),
+        url(../font/larsseit-regular-webfont.woff) format('woff'),
+        url(../font/larsseit-regular-webfont.ttf) format('truetype'),
+        url(../font/larsseit-regular-webfont.svg#larsseit-bold-webfont) format('svg');
+    
+
+
+}
+
+@font-face {
+    font-family: 'Larsseit-bold';
+    src:url(../font/larsseit-bold-webfont.eot);
+    src:url(../font/larsseit-bold-webfont.eot?#iefix) format('embedded-opentype'),
+        url(../font/larsseit-bold-webfont.woff2) format('woff2'),
+        url(../font/larsseit-bold-webfont.woff) format('woff'),
+        url(../font/larsseit-bold-webfont.ttf) format('truetype'),
+        url(../font/larsseit-bold-webfont.svg#larsseit-bold-webfont) format('svg');
+    
+
+
+}
+
+
+
+
+
+
+ 
+body{
+font: normal normal normal 22px/28px 'Larsseit';
+
+}
+
+h1{
+    font-size: 57px;
+    font-family: 'Larsseit-bold', sans-serif;
+    font-weight: bold;
+}
+
+h2{
+    font-size: 45px;
+    font-family: 'Larsseit-bold', sans-serif;
+    font-weight: bold;
+
+}
+
+h3{
+    font-size: 30px;
+    font-family: 'Larsseit-bold', sans-serif;
+    font-weight: 200;  
+}
+
+h4{
+    font: normal normal 600 22px/28px 'Larsseit';
+}
+
+
+
