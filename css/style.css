@@ -81,8 +81,8 @@ body{
   position: absolute;
   top: 70px;
   left: -230px;
-  width: 47%;
-  height: 47%;
+  width: 57vw;
+  height: 57vw;
   background: url('/img/Tecky.svg') no-repeat; 
   background-size: contain;
   z-index: -1;
@@ -384,9 +384,9 @@ align-items: center;
 }
 
 .welcomePhoto{
-  left: 51vw;
+  left: 720px;
   position: absolute;
-  width: 50vw;
+  width: 50%;
   height: auto;
   
   
@@ -476,19 +476,25 @@ align-items: center;
   background-color: #fffcf0;
   height: 91 px;
   display: flex;
-  align-items: center;
+  
   flex-direction: row;
   padding: 18px 0 18px 0;
 }
 
 .insuranceLogo img{
-  margin-right: 60px;
+  margin-right: 68px;
+  position: relative;
+}
+
+.insuranceLogoContainer{
+  margin-left: 70px;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
 
 }
 
-.insuranceLogo :nth-last-of-type(1){
-  margin-left: 5%;
-}
+
 
 
 /* Staff section */
@@ -504,7 +510,8 @@ align-items: center;
 }
 
 .staffJanaMatejkova img{
-  height: 40%;
+  position: absolute;
+  height: 70%;
   width: auto;
 }
 
@@ -513,7 +520,7 @@ align-items: center;
 }
 
 .staffJanaMatejkova div{
-  margin: 103px 0 0 100px;
+  margin: 103px 0 0 630px;
 
 }
 
@@ -536,6 +543,9 @@ align-items: center;
 .staffIrenaPodlahova img{
   margin: 10px 0 0 205px;
   height: 10%;
+  position: absolute;
+  height: 70%;
+  width: auto;
 }
 
 .staffIrenaPodlahova div{
@@ -964,6 +974,7 @@ address > a{
 .auticko {
   height: 120%;
   width: auto;
+  position: absolute;
 }
 
 
