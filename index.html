@@ -6,10 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MUDr. Jana Matějková</title>
 
-    <link rel="stylesheet" href="/css/normalize.css">
-    <link rel="stylesheet" href="/css/style.css">
-    <link rel="stylesheet" href="/css/responsive.css">
-    <link rel="stylesheet" href="/css/font.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="css/font.css">
 </head>
 <body class="mainPage">
     <!-- header section -->
@@ -43,7 +43,7 @@
                         
                         <ul class="nav-links">
                           <li>
-                            <a href="index.html">Naše ordinace</a>
+                            <a href="javascript:void(0);" onclick="scrollToSection('.doctorsOffice')">Naše ordinace</a>
                           </li>
                           <li>
                             <a href="javascript:void(0);" onclick="scrollToSection('.officeHours')">Ordinační hodiny</a>
@@ -66,7 +66,7 @@
                         
                         <ul class="menu-links">
                           <li>
-                            <a href="index.html">Naše ordinace</a>
+                            <a href="javascript:void(0);" onclick="scrollToSection('.doctorsOffice')">Naše ordinace</a>
                           </li>
                           <li>
                             <a href="javascript:void(0);" onclick="scrollToSection('.officeHours')">Ordinační hodiny</a>
@@ -99,7 +99,7 @@
               <div class="openingHoursContainer">
                   <div class="detailBox">
                       <h1>Máme otevřeno. Ordinujeme do 13 h.</h1>
-                      <a class="openingHours" title="Ordinační hodiny" aria-label="Ordinační hodiny" href="#">Ordinační hodiny</a>
+                      <a class="openingHours" title="Ordinační hodiny" aria-label="Ordinační hodiny" href="javascript:void(0);" onclick="scrollToSection('.officeHours')">Ordinační hodiny</a>
                   </div>
               </div>
           </div>
@@ -109,7 +109,7 @@
   <section class="mainInfo">
       <div class="mainContact">
           <div class="mainContactContainer">
-              <img class="phoneIcon" src="/img/telefon.svg" alt="">
+              <img class="phoneIcon" src="img/telefon.svg" alt="">
               <div class="mainConsult">
                   <a title="Zavolat do ordinace MUDr. Matějkové" aria-label="Zavolat do ordinace MUDr. Matějkové" href="+420777777777">+420 777 777 777</a>
 
@@ -122,7 +122,7 @@
           </div>
 
               <div class="post">
-                  <img src="/img/Email.svg" alt="">
+                  <img src="img/Email.svg" alt="">
                   <a title="Objednání, posudek, potvrzení" aria-label="Objednání, posudek, potvrzení" href="#">Objednání, posudek, potvrzení</a>
                 
                   
@@ -133,7 +133,7 @@
       
       </div>
       
-        <img class="welcomePhoto" src="/img/CoverJana.png" alt="Jana Matějková"> 
+        <img class="welcomePhoto" src="img/CoverJana.png" alt="Jana Matějková"> 
     
       
   </section>
@@ -148,7 +148,7 @@
     <div class="officeHeading">
         <h2>Naše ordinace</h2>
         <div>
-            <a href="#" title="Registrace miminka" aria-label="Registrace miminka">Registrace miminka</a>
+            <a href="registrace.html" title="Registrace miminka" aria-label="Registrace miminka">Registrace miminka</a>
         </div>
     </div>
 
@@ -156,17 +156,17 @@
         <a  href="#" title="Profil MUDr Jany Matějkové" aria-label="Profil MUDr Jany Matějkové"><strong>Profil lékařky</strong></a></p>
 
     <div class="officeNav">
-        <a href="#" title="Naše služby" aria-label="Naše služby">Naše služby</a>
-        <a href="#" title="Přístrojové vybavení" aria-label="Přístrojové vybavení">Přístrojové vybavení</a>
-        <a href="#" title="Ceník" aria-label="Ceník">Ceník</a>
-        <a href="#" title="Aktuality" aria-label="Aktuality">Aktuality</a>
+        <a href="sluzby.html" title="Naše služby" aria-label="Naše služby">Naše služby</a>
+        <a href="vybaveni.html" title="Přístrojové vybavení" aria-label="Přístrojové vybavení">Přístrojové vybavení</a>
+        <a href="cenik.html" title="Ceník" aria-label="Ceník">Ceník</a>
+        <a href="aktuality.html" title="Aktuality" aria-label="Aktuality">Aktuality</a>
     </div>
 
     
 
 </section>
 
-<section class="insuranceLogo">
+<section class="insuranceLogoSec">
     <div class="insuranceLogo">
         <img src="img/VZP.svg" alt="Všeobecná zdravotní pojišťovna" title="Všeobecná zdravotní pojišťovna">
         <img src="img/VOZP.svg" alt="Vojenská zdravotní pojišťovna" title="Vojenská zdravotní pojišťovna">
@@ -223,7 +223,7 @@
     <h2>Ohlasy pacientů</h2>
     <div class="patientRewiev">
         
-        <img src="../img/PetrKolinskyHerec.png" alt="Petr Kolínský" title="Petr Kolínský">
+        <img src="img/PetrKolinskyHerec.png" alt="Petr Kolínský" title="Petr Kolínský">
         <div>
             <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Placeat, accusamus beatae harum vitae inventore illo eos nisi sint et aspernatur autem aliquam quam tenetur consectetur asperiores quasi nihil. Nam, necessitatibus?</p>
             <span>Petr Kolínský, herec</span>
@@ -517,14 +517,14 @@
     <div class="contactContainerTel">
         <div class="contactContainerTelinside">
 
-            <img src="../img/telefon.svg" alt="phone symbol">
+            <img src="img/telefon.svg" alt="phone symbol">
 
             <a href="#" title="Zavolat do ordinace MUDr. Matějkové"  aria-label="Zavolat do ordinace MUDr. Matějkové">+420 777 777 777</a>
 
 
         </div>
 
-        <ul>
+        <ul class="contacUnList">
             
             <li>V akutních případech volejte kdykoliv v ordinačních hodinách</li>
             <li>Na výsledky výtěrů a ostatních vyšetření volejte 10:00 – 10:30 hodin, dříve nemáme výsledky k dispozici.</li>
@@ -535,14 +535,14 @@
     
         <div class="contactContainerEmail">
 
-            <img src="../img/Email.svg" alt="post symbol ">
+            <img src="img/Email.svg" alt="post symbol ">
             <a href="#" title="Napsat email" aria-label="Napsat email">email@matejkova.cz</a>
 
         </div>
 
         <div class="emailList">
 
-            <h5>V neakutních případech nám prosím pište. Emailem vyřešíme:</h5>
+                <p>V neakutních případech nám prosím pište. Emailem vyřešíme:</p>
             
                 <ul>
                     <li>žádosti o registraci vašeho dítěte nebo novorozence</li>
@@ -562,13 +562,14 @@
 
             <div class="contactContainerAddressInside">
 
-                <img src="../img/špendlík.svg" alt="place symbol">
+                <img src="img/špendlík.svg" alt="place symbol">
                 <h5>Kde nás najdete?</h5>
                 <address><a title="Zobrazit místo ordinace na Google mapách" aria-label="Zobrazit místo ordinace na Google mapách" href="https://www.google.com/maps/place/Karla+%C4%8Capka+2459%2F5,+397+01+P%C3%ADsek+1-Bud%C4%9Bjovick%C3%A9+P%C5%99edm%C4%9Bst%C3%AD/@49.303989,14.1555119,17z/data=!4m6!3m5!1s0x470b4ff079438579:0xe0d9df31ed200fbd!8m2!3d49.303989!4d14.1555119!16s%2Fg%2F11bw3_6_5v?entry=ttu">Karla Čapka 2459/5</a></address>
-               
+                
+                <img src="/img/Auto.svg" class="auticko" alt="">
             </div>
                
-                <img class="childCar" src="/img/Auto.svg" alt="#">
+            
                 
             
 
@@ -578,8 +579,8 @@
     
     <div class="ordinancePhoto">
 
-        <img src="../img/ordinaceNemocnice.png" alt="">
-        <img src="../img/ordinaceVchod.png" alt="">
+        <div class="ordinancePlace1"><img src="img/ordinaceNemocnice.png" alt=""></div>
+        <div class="ordinancePlace2"><img src="img/ordinaceVchod.png" alt=""></div>
     
     </div>
 
@@ -596,9 +597,9 @@
 <footer>
 <div class="footer">
     
-        <img class="footerFirstImg" src="../img/LogoEU.svg" alt="EU">
-        <img src="../img/LogoMK.svg" alt="Ministertvo kultury">
-        <img src="../img/LogoNPO.svg" alt="Národní plán obnovy">
+        <img class="footerFirstImg" src="img/LogoEU.svg" alt="EU">
+        <img src="img/LogoMK.svg" alt="Ministertvo kultury">
+        <img src="img/LogoNPO.svg" alt="Národní plán obnovy">
         
         <p>Byl realizován projekt 0380000781 – Redesign webových stránek, zaměřený na zkvalitnění online prezentace matejkovajana.cz, financovaný Evropskou unií – Next Generation EU</p>
 
@@ -612,6 +613,6 @@
 <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
 <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.cycle2/2.1.6/jquery.cycle2.min.js"></script> -->
 <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.cycle2/2.1.6/jquery.cycle2.pager.min.js"></script> -->
-<script type="text/JavaScript" src="../js/main.js"></script>
+<script type="text/JavaScript" src="js/main.js"></script>
 </body>
 </html>
