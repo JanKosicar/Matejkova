@@ -10,10 +10,14 @@ function toggleMenu(){
 // scroll to a section in nav menu
 
 function scrollToSection(selector) {
-    var element = document.querySelector(selector);
-    if (element) {
-        element.scrollIntoView({ behavior: 'smooth' });
-    }
+  var element = document.querySelector(selector);
+  if (element) {
+      var offset = element.offsetTop - document.querySelector('.headerBottom').offsetHeight; // Adjust for fixed header
+      window.scrollTo({
+          top: offset,
+          behavior: 'smooth'
+      });
+  }
 }
 
 

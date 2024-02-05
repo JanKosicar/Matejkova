@@ -520,7 +520,7 @@ align-items: center;
 }
 
 .staffJanaMatejkova div{
-  margin: 103px 0 0 630px;
+  margin: 103px 0 120px 630px;
 
 }
 
@@ -532,18 +532,20 @@ align-items: center;
 .staffJanaMatejkova p{
   margin-top: 18px;
   font-size: 22px;
+  max-width: 700px;
 }
 
 
 .staffIrenaPodlahova{
   display: flex;
   flex-direction: row;
+  position: relative;
 }
 
 .staffIrenaPodlahova img{
   margin: 10px 0 0 205px;
   height: 10%;
-  position: absolute;
+  position: relative;
   height: 70%;
   width: auto;
 }
@@ -562,6 +564,7 @@ align-items: center;
   margin-top: 18px;
   font-size: 22px;
   font-weight: normal;
+  max-width: 700px;
 }
 
 /* Slider section */
@@ -1081,6 +1084,95 @@ footer{
 .priceList td{
   margin-left: 40px;
 }
+
+/* registrace.html */
+
+.registracePage h1{
+  margin: 0 0 45px 150px;
+}
+
+.registracePage .navbar{
+  margin-bottom: 85px;
+}
+
+.registracePage  p{
+  font-size: 22px !important;
+  margin: 0 0 0 150px;
+  margin-bottom: 57px;
+  max-width: 760px;
+
+}
+
+.registracePage .phone{
+  margin: 0 0 0 135px;
+}
+
+.registracePage .contact{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-bottom: 101px;
+}
+
+.registracePage .contact div{
+  display: flex;
+  align-items: center;
+}
+
+
+
+.registracePage .phone img{
+  width: 115px;
+  height: auto;
+  margin-right: 10px;
+}
+
+.registracePage .phone a,
+.registracePage .email a{
+  font-size: 45px;
+  text-decoration: none;
+  color: #160EAA;
+  min-width: 318px;
+}
+
+.registracePage .phone a:hover,
+.registracePage .email a:hover{
+  font-size: 45px;
+  
+  color: #C6E5CD;
+}
+
+.registracePage .email{
+  margin-left: 138px;
+}
+
+.registracePage .email img{
+  width: 100px;
+  height: auto;
+  margin-right: 19px;
+
+}
+
+.listOfInsuranceCompaniesContainer span{
+
+  font-size: 30px;
+  font-weight: normal;
+}
+
+.listOfInsuranceCompanies{
+  background-color: #D6EDF0;
+  padding: 82px 0;
+}
+
+.listOfInsuranceCompanies div{
+  margin-left: 150px;
+}
+
+.listOfInsuranceCompanies table{
+  margin-top: 30px;
+}
+
+
 
 /* Mobile phones */
 
