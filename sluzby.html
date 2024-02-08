@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MUDr. Jana Matějková</title>
+
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="css/font.css">
+</head>
+<body class="sluzbyPage">
+    <!-- header section -->
+    <header>
+        <div class="topBanner">
+            
+                <div class="notification">
+                    
+                    <span class="attention">Upozornění na omezení provozu!</span>
+                    
+                    <div class="bannerRight">
+                        <span>Dovolená od 2. do 9. září</span>
+                    
+                        <a href="aktuality.html">Více informací</a>
+                    </div>
+                </div>
+            
+        </div>
+        <div class="headerBottom">
+        
+            <div class="containerFluid">
+                
+                <div class="navbar">
+                    
+                    <div class="logo">
+                    <h3>MUDr. Jana Matějková</h3>
+                    <h4>Lékařka pro děti a dorost</h4>
+                    </div>
+
+                    <nav id="desktop-nav">
+                        
+                        <ul class="nav-links">
+                          <li>
+                            <a href="javascript:void(0);" onclick="scrollToSection('.doctorsOffice')">Naše ordinace</a>
+                          </li>
+                          <li>
+                            <a href="javascript:void(0);" onclick="scrollToSection('.officeHours')">Ordinační hodiny</a>
+                          </li>
+                          <li>
+                            <a href="javascript:void(0);" onclick="scrollToSection('.adviceAndTips')">Rady a tipy</a>
+                          </li>
+                          <li>
+                            <a href="javascript:void(0);" onclick="scrollToSection('.contactInfo')">Kontakt</a>
+                          </li>
+                        </ul>
+                    </nav>
+
+                    <nav id="hamburger-menu">
+                        <div class="hamburger-icon" onclick="toggleMenu()">
+                            <span></span>
+                            <span></span>
+                            
+                        </div>
+                        
+                        <ul class="menu-links">
+                          <li>
+                            <a href="javascript:void(0);" onclick="scrollToSection('.doctorsOffice')">Naše ordinace</a>
+                          </li>
+                          <li>
+                            <a href="javascript:void(0);" onclick="scrollToSection('.officeHours')">Ordinační hodiny</a>
+                          </li>
+                          <li>
+                            <a href="javascript:void(0);" onclick="scrollToSection('.adviceAndTips')">Rady a tipy</a>
+                          </li>
+                          <li>
+                            <a href="javascript:void(0);" onclick="scrollToSection('.contactInfo')">Kontakt</a>
+                          </li>
+                          <li>
+                            <a href="registrace.html">Registrace miminka</a>
+                          </li>
+                        </ul>
+                    </nav>
+                </div>
+
+            </div>
+    
+        </div>
+
+    </header>
+
+    <main>
+        <div>
+            <div class="ourServices">
+                <div>
+                <h2>Naše služby</h2>
+                </div>
+                <div>
+                    <a href="registrace.html" title="Registrace miminka" aria-label="Registrace miminka">Registrace miminka</a>
+                </div>
+            </div>
+        </div>
+        <ul>
+            <li>Léčebně-preventivní péči pro děti od narození do 19 let věku</li>
+            <li>Registrace novorozence již před narozením</li>
+            <li>Telefonické a emailové konzultace, objednání, zaslání eReceptu</li>
+            <li>Léčba a diagnostika nemocí k diagnostice využíváme <a href="#">přistroje přímo v ordinaci</a></li>
+            <li>Preventivní prohlídky dle doporučení pediatrické společnosti, kde hodnotíme růst a vývoj, objednáváme <a href="#">na daný čas</a> (viz prohlídky)</li>
+            <li>Povinná a <a href="#">nadstandartní očkování</a></li>
+            <li>Laktační a výživové poradenství</li>
+            <li>Odběry krve a ostatní výkony (výtěry, injekce, ošetření ran, odstranění stehů) při těchto výkonech je možnost zdarma využít anestetický krém či chlazení.</li>
+            <li>Možnost zapůjčení kojeneckých vah (zdarma)</li>
+            <li>Možnost <a href="#">nastřelení náušnic</a> či klasické propíchnutí</li>
+            <li>Parkování pod okny ordinace</li>
+            <li>Možnost platby kartou</li>
+        </ul>
+    
+        <section class="listOfInsuranceCompanies">
+                
+            <div class="listOfInsuranceCompaniesContainer">
+            <span>
+            Seznam smluvních pojišťoven
+            </span>
+            
+            <table>
+                <tr>
+                    <td>111</td>
+                    <td>Všeobecná zdravotní pojišťovna</td>
+                </tr>
+                <tr>
+                    <td>201</td>
+                    <td>Vojenská zdravotní pojišťovna</td>
+                </tr>
+                <tr>
+                    <td>205</td>
+                    <td>Česká průmyslová zdravotní pojišťovna</td>
+                </tr>
+                <tr>
+                    <td>207</td>
+                    <td>Oborová zdravotní pojišťovna zaměstnanců bank, pojišťoven a stavebnictví</td>
+                </tr>
+                <tr>
+                    <td>211</td>
+                    <td>Revírní bratrská pokladna</td>
+                </tr>
+            </table>
+
+
+            </div>
+
+            <img src="/img/" alt="teddy" title="teddy">
+
+        </section>
+        <div class="footerSignature" >
+            <a class="marathonSign" href="#">Webdesign Marahon Studio</a>
+        </div>
+    </main>
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.cycle2/2.1.6/jquery.cycle2.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.cycle2/2.1.6/jquery.cycle2.pager.min.js"></script>
+<script type="text/JavaScript" src="js/main.js"></script>
+</body>
