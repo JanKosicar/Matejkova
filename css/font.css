@@ -58,5 +58,22 @@ h4{
     font: normal normal 600 22px/28px 'Larsseit';
 }
 
+@media only screen and (max-width: 780px){
+    h1{
+        font-size: 38px;
+    }
 
+    h2{
+        font-size: 1.73rem;
+    }
+
+    h3{
+        font-size: 25px;
+    }
+
+    h4{
+        font-size: 17px;
+    }
+
+}
 

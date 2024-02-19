@@ -66,24 +66,52 @@ $(document).ready(function() {
 
 // shorten name on the mainpage
 
-window.addEventListener('resize', function() {
-  shortenName();
-});
+function showShortName() {
+  var doctorNameElement = document.getElementById('doctorsName');
+  var fullName = doctorNameElement.textContent;
+  var lastName = fullName.substring(fullName.lastIndexOf(" ") + 1); // Získá pouze poslední slovo jako příjmení
+  doctorNameElement.textContent = 'MUDr. ' + lastName;
+}
 
-function shortenName() {
-  var nameElement = document.getElementById('doctorsName');
-  var windowWidth = window.innerWidth;
-  var fullName = nameElement.textContent;
+function showFullName() {
+  var doctorNameElement = document.getElementById('doctorsName');
+  doctorNameElement.textContent = 'MUDr. Jana Matějková';
+}
 
-  if (windowWidth < 780) {
-    var shortenedName = fullName.replace(/MUDr\.\s(\w+)\s(\w+)/, 'MUDr. $2');
-    nameElement.textContent = shortenedName;
+function adjustNameDisplay() {
+  if (window.innerWidth <= 780) {
+    showShortName();
   } else {
-    nameElement.textContent = 'MUDr. Jana Matějková';
+    showFullName();
   }
 }
 
-// Zkrácení textu po načtení stránky
+window.addEventListener('resize', function() {
+  adjustNameDisplay();
+});
+
+// Zobrazení odpovídajícího jména po načtení stránky
 window.addEventListener('load', function() {
-  shortenName();
+  adjustNameDisplay();
+});
+
+// displayNone div in a header
+
+window.addEventListener('resize', function() {
+  hideElement();
+});
+
+function hideElement() {
+  var windowWidth = window.innerWidth;
+  var spaceBetweenElement = document.querySelector('.spaceBetween');
+  
+  if (windowWidth <= 780) {
+    spaceBetweenElement.style.display = 'none';
+  } else {
+    spaceBetweenElement.style.display = 'block';
+  }
+}
+
+window.addEventListener('load', function() {
+  hideElement();
 });

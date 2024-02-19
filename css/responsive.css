@@ -2,19 +2,10 @@
 
 @media only screen and (max-width: 780px) {
     
-    h1{
-        font-size: 2.5rem;
-    }
-    h2{
-        font-size: 1.73rem;
-    }
-    h3{
-        font-size: 1.14rem;
-    }
+    
+  
 
-    h4{
-        font-size: 2px;
-    }
+    
 
     .attention{
         display: none;
@@ -35,6 +26,10 @@
 
     }
 
+    .containerFluid {
+        margin: 0 0 0 0;
+    }
+
     
 
     .hamburger-icon{
@@ -42,9 +37,15 @@
         margin-left: 35vw;
     }
 
+    .hamburger-menu{
+        margin: 0 0 0 0;
+    }
+
+
     .spaceBetween{
         display: none;
         flex-shrink: 10;
+        width: 1px;
     }
 
     .logo{
@@ -53,12 +54,23 @@
       justify-content: flex-start;
     }
 
-    .logo h3{
+    /* .logo h3{
         font-size: 25px ;
     }
 
     .logo h4{
         font-size: 17px;
+    } */
+
+    .detailbox h1 {
+        font-size: 38px;
+    }
+}
+
+@media only screen and (max-width: 600px){
+    .logo{
+        margin: 0 0 0 20px;
+        padding: 0 0 0 0;
     }
 }
 
