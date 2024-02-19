@@ -63,3 +63,27 @@ $(document).ready(function() {
         }
     });
 });
+
+// shorten name on the mainpage
+
+window.addEventListener('resize', function() {
+  shortenName();
+});
+
+function shortenName() {
+  var nameElement = document.getElementById('doctorsName');
+  var windowWidth = window.innerWidth;
+  var fullName = nameElement.textContent;
+
+  if (windowWidth < 780) {
+    var shortenedName = fullName.replace(/MUDr\.\s(\w+)\s(\w+)/, 'MUDr. $2');
+    nameElement.textContent = shortenedName;
+  } else {
+    nameElement.textContent = 'MUDr. Jana Matějková';
+  }
+}
+
+// Zkrácení textu po načtení stránky
+window.addEventListener('load', function() {
+  shortenName();
+});

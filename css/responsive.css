@@ -1,0 +1,85 @@
+/* Mobile phones */
+
+@media only screen and (max-width: 780px) {
+    
+    h1{
+        font-size: 2.5rem;
+    }
+    h2{
+        font-size: 1.73rem;
+    }
+    h3{
+        font-size: 1.14rem;
+    }
+
+    h4{
+        font-size: 2px;
+    }
+
+    .attention{
+        display: none;
+    }
+
+    
+
+    .notification > span {
+        flex-basis: none;
+    }
+
+    .mainPage header::before{
+        display: none;
+    }
+
+    .navbar{
+      justify-content: flex-start;
+
+    }
+
+    
+
+    .hamburger-icon{
+        padding: 0;
+        margin-left: 35vw;
+    }
+
+    .spaceBetween{
+        display: none;
+        flex-shrink: 10;
+    }
+
+    .logo{
+      margin-left: 20px;
+      min-width: 195px;
+      justify-content: flex-start;
+    }
+
+    .logo h3{
+        font-size: 25px ;
+    }
+
+    .logo h4{
+        font-size: 17px;
+    }
+}
+
+@media only screen and (max-width: 1250px) {
+  #desktop-nav {
+      display: none;
+  }
+  .hamburger-icon {
+      display: flex;
+  }
+}
+
+@media only screen and (max-width: 1250px){
+
+}
+
+
+/* 1600px + */
+
+@media screen and (min-width: 1600px){
+
+
+
+}
