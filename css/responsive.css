@@ -26,6 +26,10 @@
 
     }
 
+    .navbarHidden {
+        width: 1px;
+    }
+
     .containerFluid {
         margin: 0 0 0 0;
     }
@@ -34,7 +38,7 @@
 
     .hamburger-icon{
         padding: 0;
-        margin-left: 35vw;
+        margin-left: 43vw;
     }
 
     .hamburger-menu{
@@ -62,9 +66,79 @@
         font-size: 17px;
     } */
 
+    .container{
+        width: 89vw;
+        margin-left: 20px;
+    }
+
     .detailbox h1 {
         font-size: 38px;
     }
+
+    .openingHours {
+        font-size: 13px;
+    }
+
+    .mainContact {
+        margin: 250px 0 0 20px;
+    }
+
+    .mainConsult :nth-child(1){
+        font-size: 22px;
+      }
+
+    .mainConsult :nth-child(2){
+        font-size: 17px;
+      }
+
+    .mainConsult :nth-child(3){
+        font-size: 17px;
+      }
+
+    .mainContactContainer {
+        flex-direction: column;
+    }
+
+    .phoneIcon{
+        width: 83px;
+        height: 86px;
+        margin-left: 8px;
+    }
+
+    .post{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .post img{
+        width: 85px;
+        height: 80px;
+        margin-left:13px ;
+        right: 50px;
+        margin-top: 50px;
+    }
+
+    .post a {
+        margin-top: 18px;
+        font-size: 17px;
+    }
+
+    .welcomePhoto{
+        width: 307px;
+        height: auto;
+        left: 13vw;
+    }
+
+    .officeHeading{
+        margin-left: 20px;
+    }
+
+    .officeHeading h2 {
+        font-size: 38px;
+    }
+
+    /*Doctors office  section*/
+
 }
 
 @media only screen and (max-width: 600px){

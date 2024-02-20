@@ -73,16 +73,14 @@ function showShortName() {
   doctorNameElement.textContent = 'MUDr. ' + lastName;
 }
 
-function showFullName() {
-  var doctorNameElement = document.getElementById('doctorsName');
-  doctorNameElement.textContent = 'MUDr. Jana Matějková';
-}
-
 function adjustNameDisplay() {
-  if (window.innerWidth <= 780) {
+  var windowWidth = window.innerWidth;
+  var doctorNameElement = document.getElementById('doctorsName');
+
+  if (windowWidth <= 780) {
     showShortName();
   } else {
-    showFullName();
+    doctorNameElement.textContent = 'MUDr. Jana Matějková';
   }
 }
 
@@ -90,10 +88,13 @@ window.addEventListener('resize', function() {
   adjustNameDisplay();
 });
 
-// Zobrazení odpovídajícího jména po načtení stránky
+
 window.addEventListener('load', function() {
   adjustNameDisplay();
 });
+
+
+
 
 // displayNone div in a header
 

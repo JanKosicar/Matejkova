@@ -123,6 +123,7 @@ body{
 .spaceBetween{
   width: 31%;
   flex-shrink: 1;
+  
 }
 
 .navbarHidden{
@@ -298,6 +299,8 @@ body{
       .openingHours{
   z-index: 100;
 }
+
+
 
 .detailBox{
   text-align: center;
