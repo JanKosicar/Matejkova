@@ -63,6 +63,9 @@
         margin: 25vw 0 0 5vw;
     }
 
+    /* patientsRewiev */
+
+    
     
 }
 
@@ -177,7 +180,7 @@
         align-items: flex-start;
     }
 
-    .post img{
+    .postIcon{
         width: 85px;
         height: 80px;
         margin-left:13px ;
@@ -255,6 +258,144 @@
     .janaMatejkovaParagraph{
         margin: 400px 0 0 0;
     }
+
+    /* PatientsRewievSection */
+
+    .rewievFromPatients h2{
+        font-size: 38px;
+        margin-left: 20px;
+    }
+
+    .patientRewiev{
+        flex-direction: column;
+        align-items: center;
+        margin-left: 20px;
+    }
+
+    .patientRewiev img{
+        margin-bottom: 25px;
+        margin-right: 0px;
+    }
+
+    .patientRewiev p, .patientRewiev span{
+        font-size: 17px;
+    }
+
+    .otherRewievs{
+        margin-left: 6.5vw;
+    }
+
+    .otherRewievs h3{
+        font-size: 25px;
+    }
+
+    .searchEngine {
+        font-size: 17px;
+    }
+
+    .otherRewievs a{
+        margin-right: 3.4vw;
+    }
+
+    /* officeHoursSection */
+
+    .officeHours h2{
+        font-size: 38px;
+        margin-left: 20px;
+    }
+
+    .officeHours h5{
+        margin-left: 20px;
+        font-size: 25px;
+    }
+
+    .officeHours p{
+        margin-left: 20px;
+        font-size: 17px;
+    }
+
+    .officeHours table{
+        margin-left: 20px;
+    }
+
+    thead th {
+        font-size: 17px;
+    }
+
+    thead {
+        height: 67px;
+    }
+
+    .day {
+        font-size: 17px;
+    }
+
+    tr {
+        height: 37px;
+    }
+
+    .available{
+        font-size: 17px;
+    }
+
+    /*advice and tips section*/
+
+    .adviceAndTipsInside > h2{
+        font-size: 55px;
+        margin-left: 20px;
+    }
+
+    .adviceAndTipsInside > h3{
+        font-size: 38px;
+        margin-left: 20px;
+    }
+
+    .adviceRollbox{
+        margin-left: 20px;
+        border-radius: 16px;
+      }
+
+      .adviceContainer h3{
+        margin-left: 20px;
+      }
+
+      /*contact info section*/
+
+      .contactInfo > h2{
+        font-size: 55px;
+        margin-left: 20px;
+      }
+
+      .contactContainerTel{
+        margin-left: 20px;
+        
+      }
+
+      .contactContainerTelInside{
+        flex-direction: column;
+      }
+
+      .contactContainerTelInside  img{
+        right: 8px;
+        width: 86px;
+        height: 83px;
+      }
+
+      .contactContainerEmail .postIcon{
+        width: 85px;
+        height: 80px;
+        
+      }
+
+      .contacUnList {
+
+      }
+
+      .contactContainerEmail{
+        flex-direction: column;
+      }
+
+
 
 }
 
