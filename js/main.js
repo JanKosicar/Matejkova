@@ -66,36 +66,29 @@ $(document).ready(function() {
 
 // shorten name on the mainpage
 
-function showShortName() {
+function hideFirstName() {
   var doctorNameElement = document.getElementById('doctorsName');
-  var fullName = doctorNameElement.textContent;
-  var lastName = fullName.substring(fullName.lastIndexOf(" ") + 1); // Získá pouze poslední slovo jako příjmení
-  doctorNameElement.textContent = 'MUDr. ' + lastName;
-}
-
-function adjustNameDisplay() {
   var windowWidth = window.innerWidth;
-  var doctorNameElement = document.getElementById('doctorsName');
 
   if (windowWidth <= 780) {
-    showShortName();
+    var fullName = doctorNameElement.textContent;
+    var lastName = fullName.split(' ').pop(); // Získá poslední slovo jako příjmení
+    doctorNameElement.textContent = 'MUDr. ' + lastName;
   } else {
-    doctorNameElement.textContent = 'MUDr. Jana Matějková';
+    doctorNameElement.textContent = 'MUDr. Jana Matějková'; // Zobrazí celé jméno na PC
   }
 }
 
 window.addEventListener('resize', function() {
-  adjustNameDisplay();
+  hideFirstName();
 });
 
-
+// Zobrazení celého jména po načtení stránky
 window.addEventListener('load', function() {
-  adjustNameDisplay();
+  var doctorNameElement = document.getElementById('doctorsName');
+  doctorNameElement.textContent = 'MUDr. Jana Matějková'; // Zobrazí celé jméno po načtení stránky
+  hideFirstName();
 });
-
-
-
-
 // displayNone div in a header
 
 window.addEventListener('resize', function() {
