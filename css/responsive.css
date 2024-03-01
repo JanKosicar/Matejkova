@@ -5,6 +5,11 @@
 
 @media screen and (min-width: 1600px){
 
+    /* contact info section */
+
+    .ordinancePhoto :nth-of-type(1){
+        margin-left: 0;
+    }  
 
 
 }
@@ -65,7 +70,15 @@
 
     /* patientsRewiev */
 
-    
+    /* contact info section */
+
+    .ordinancePhoto :nth-of-type(1){
+        margin-left: 4.8vw;
+    }  
+
+    .footer > p {
+        /* white-space: nowrap; */
+    }
     
 }
 
@@ -73,7 +86,11 @@
     
     
   
-
+    #backToTopBtn{
+        right: 15px;
+        width: 55px;
+        height: 55px;
+    }
     
 
     .attention{
@@ -197,6 +214,13 @@
         width: 307px;
         height: auto;
         left: 13vw;
+    }
+
+    /* backToTopButton */
+
+    #backToTopBtn{
+        height: 55px;
+        width: 55px;
     }
 
     /*Doctors office  section*/
@@ -366,9 +390,15 @@
         margin-left: 20px;
       }
 
+
+
       .contactContainerTel{
         margin-left: 20px;
-        
+        flex-direction: column;
+      }
+
+      .contactContainerTel  ul{
+        font-size: 17px;
       }
 
       .contactContainerTelInside{
@@ -379,6 +409,12 @@
         right: 8px;
         width: 86px;
         height: 83px;
+        position: static;
+      }
+
+      .contactContainerTelInside  a{
+        font-size: 25px;
+        display: block;
       }
 
       .contactContainerEmail .postIcon{
@@ -388,13 +424,43 @@
       }
 
       .contacUnList {
-
+        font-size: 17px;
       }
 
       .contactContainerEmail{
         flex-direction: column;
       }
+      
+      .contactContainerEmail a{
+        font-size: 25px;
+      }
 
+      .contactContainerAddressInside div{
+        flex-direction: column;
+      }
+
+      .spendlik{
+        width: 85px;
+        height: 80px;
+        margin: 0 0 18 0;
+      }
+
+      
+
+      .auticko{
+        width: 110px;
+        height: 77px;
+        z-index: -1;
+      }
+
+      .ordinancePhoto :nth-of-type(1){
+        margin-left: 20px;
+      }  
+    
+      .buildingDescription > p{
+        margin-left: 20px;
+        font-size: 17px;
+      }
 
 
 }
@@ -412,6 +478,10 @@
     .staffIrenaPodlahova div{
         margin-left: 0;
     }
+
+    .ordinancePhoto :nth-of-type(1){
+        margin-left: 0px;
+      }  
 }
 
 

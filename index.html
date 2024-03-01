@@ -122,14 +122,14 @@
                   <span>Konzultace, výsledky od 10:00 do 10:30
                   V akutních případech volejte kdykoliv</span>
 
-                  <a title="Co dělat když nejsme dostupní" aria-label="Co dělat když nejsme dostupní" href="#">Co dělat když nejsme dostupní</a>
+                  <a href="javascript:void(0);" onclick="scrollToSection('.adviceAndTips')" title="Co dělat když nejsme dostupní" aria-label="Co dělat když nejsme dostupní" href="#">Co dělat když nejsme dostupní</a>
           
               </div>
           </div>
 
               <div class="post">
                   <img class="postIcon" src="img/Email.svg" alt="">
-                  <a title="Objednání, posudek, potvrzení" aria-label="Objednání, posudek, potvrzení" href="#">Objednání, posudek, potvrzení</a>
+                  <a href="javascript:void(0);" onclick="scrollToSection('.contactContainerEmail')" title="Objednání, posudek, potvrzení" aria-label="Objednání, posudek, potvrzení" >Objednání, posudek, potvrzení</a>
                 
                   
               </div>
@@ -141,6 +141,7 @@
       
         <img class="welcomePhoto" src="img/CoverJana.png" alt="Jana Matějková"> 
     
+        <button id="backToTopBtn" onclick="scrollToTop()"></button>
       
   </section>
 
@@ -525,16 +526,23 @@
 
     <h2>Kontakt</h2>
 
+    
     <div class="contactContainerTel">
-        <div class="contactContainerTelinside">
 
+        
+
+
+        <div class="contactContainerTelInside">
+            
             <img class="phoneIcon" src="img/telefon.svg" alt="phone symbol">
+            
 
+           
             <a href="#" title="Zavolat do ordinace MUDr. Matějkové"  aria-label="Zavolat do ordinace MUDr. Matějkové">+420 777 777 777</a>
-
+            
 
         </div>
-
+        <div>
         <ul class="contacUnList">
             
             <li>V akutních případech volejte kdykoliv v ordinačních hodinách</li>
@@ -543,13 +551,15 @@
             <li><a href="#" title="Co dělat když tu nejsme" aria-label="Co dělat když tu nejsme">Co dělat když tu nejsme</a></li>
 
         </ul>
-    
+        </div>
         <div class="contactContainerEmail">
 
             <img class="postIcon" src="img/Email.svg" alt="post symbol ">
             <a href="#" title="Napsat email" aria-label="Napsat email">email@matejkova.cz</a>
 
         </div>
+
+
 
         <div class="emailList">
 
@@ -572,12 +582,16 @@
         <div class="contactContainerAddress">
 
             <div class="contactContainerAddressInside">
-
-                <img src="img/spendlik.svg" alt="place symbol">
-                <h5>Kde nás najdete?</h5>
-                <address><a title="Zobrazit místo ordinace na Google mapách" aria-label="Zobrazit místo ordinace na Google mapách" href="https://www.google.com/maps/place/Karla+%C4%8Capka+2459%2F5,+397+01+P%C3%ADsek+1-Bud%C4%9Bjovick%C3%A9+P%C5%99edm%C4%9Bst%C3%AD/@49.303989,14.1555119,17z/data=!4m6!3m5!1s0x470b4ff079438579:0xe0d9df31ed200fbd!8m2!3d49.303989!4d14.1555119!16s%2Fg%2F11bw3_6_5v?entry=ttu">Karla Čapka 2459/5</a></address>
+                <div>
+                    <img class="spendlik" src="img/spendlik.svg" alt="place symbol">
+                    <h5>Kde nás najdete?</h5>
+                    <address><a title="Zobrazit místo ordinace na Google mapách" aria-label="Zobrazit místo ordinace na Google mapách" href="https://www.google.com/maps/place/Karla+%C4%8Capka+2459%2F5,+397+01+P%C3%ADsek+1-Bud%C4%9Bjovick%C3%A9+P%C5%99edm%C4%9Bst%C3%AD/@49.303989,14.1555119,17z/data=!4m6!3m5!1s0x470b4ff079438579:0xe0d9df31ed200fbd!8m2!3d49.303989!4d14.1555119!16s%2Fg%2F11bw3_6_5v?entry=ttu">Karla Čapka 2459/5</a></address>
+                </div>
                 
+
+                <div>
                 <img src="img/Auto.svg" class="auticko" alt="">
+                </div>
             </div>
                
             
@@ -590,14 +604,14 @@
     
     <div class="ordinancePhoto">
 
-        <div class="ordinancePlace1"><img src="img/ordinaceNemocnice.png" alt=""></div>
+        <div class="ordinancePlace1"><img src="img/BudovaZvenku .png" alt=""></div>
         <div class="ordinancePlace2"><img src="img/ordinaceVchod.png" alt=""></div>
     
     </div>
 
     <div class="buildingDescription">
 
-        <span>Budova přes parkoviště naproti hlavnímu vchodu do nemocnice.<br> Vchod z pravé strany blíže cukráně. Parkoviště přímo u budovy.</span>
+        <p>Budova přes parkoviště naproti hlavnímu vchodu do nemocnice. Vchod z pravé strany blíže cukráně. Parkoviště přímo u budovy.</p>
 
     </div>
 
@@ -612,7 +626,7 @@
         <img src="img/LogoMK.svg" alt="Ministertvo kultury">
         <img src="img/LogoNPO.svg" alt="Národní plán obnovy">
         
-        <p>Byl realizován projekt 0380000781 – Redesign webových stránek, zaměřený na zkvalitnění online prezentace matejkovajana.cz, financovaný Evropskou unií – Next Generation EU</p>
+        <p>Projekt 0380000781 – Redesign webových stránek, zaměřený na zkvalitnění online prezentace matejkovajana.cz, financovaný Evropskou unií – Next Generation EU</p>
 
 </div>
 
