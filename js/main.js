@@ -7,6 +7,19 @@ function toggleMenu(){
 
 }
 
+// logoClickToMainPage
+
+document.addEventListener("DOMContentLoaded", function() {
+  
+  var logoElement = document.querySelector('.logo');
+  
+  
+  logoElement.addEventListener('click', function() {
+    
+    window.location.href = 'index.html';
+  });
+});
+
 // scroll to a section in nav menu
 
 function scrollToSection(selector) {
