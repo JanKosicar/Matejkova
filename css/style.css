@@ -103,12 +103,12 @@ body{
   top: 295px;
   left: 82vw;
   width: 135%;
-  height: 135%;
+  height: 165%;
   background: url('../img/Raketa.svg') no-repeat; 
   background-size: contain;
   z-index: 2;
   opacity: 1;
-  overflow: hidden;
+  overflow-x: hidden;
 }
 
 
@@ -245,7 +245,7 @@ body{
   top: 10px;
   right: 0;
   padding-top: 40px;
-  background-color: #D6EDF0;
+  /* background-color: #D6EDF0; */
   width: fit-content;
   max-height: 0;
   overflow: hidden;
@@ -331,7 +331,6 @@ body{
 
 .detailBox h1{
   position: relative;
-  hyphens: auto;
 }
 
 .openingHours  {
@@ -453,7 +452,7 @@ align-items: center;
   position: absolute;
   width: 661px;
   height: auto;
-  
+  overflow-x: hidden;
   
   
 }
@@ -522,7 +521,7 @@ align-items: center;
 .doctorsOffice{
   background-color: #FFEDA3;
   padding: 130px 0 100px 0 ;
-  
+  width: 100%;
   
 }
 
@@ -630,15 +629,18 @@ align-items: center;
 .insuranceLogo img{
   margin-right: 68px;
   position: relative;
+  margin-left: 70px;
+  transition: transform 0.5s ease-in-out;
 }
 
-.insuranceLogoContainer{
-  margin-left: 70px;
+.sliderContainer{
+  
   display: flex;
   align-items: center;
   overflow: hidden;
 
 }
+
 
 
 
@@ -730,7 +732,7 @@ align-items: center;
   position: relative;
 }
 
-.sliderContainer{
+.photoSliderContainer{
   overflow: hidden;
  
 }
@@ -741,10 +743,11 @@ align-items: center;
   transition: transform 0.5s ease-in-out;
 }
 
-.slider img {
+.sliderContainer img {
   width: auto;
   max-height: 372px;
   margin-right: 10px;
+  transition: transform 0.5s ease-in-out;
 }
 
 
@@ -1192,7 +1195,7 @@ address a:hover{
 
 
 
-.ordinancePhoto{
+#ordinancePhoto{
   display: flex;
   flex-direction: row;
   margin-bottom: 40px;

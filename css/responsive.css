@@ -17,6 +17,11 @@
 
 @media only screen and (max-width: 1250px) {
   
+    .mainPage header::before{
+        display: none;
+    }
+
+
     /* header nav hamburger */
   
     #desktop-nav {
@@ -121,7 +126,7 @@
     }
 
     .menu-links li a{
-        
+
     }
 
     .hamburger-icon{

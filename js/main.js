@@ -33,6 +33,51 @@ function scrollToSection(selector) {
   }
 }
 
+// insuranceLogo Slider
+
+document.addEventListener("DOMContentLoaded", function() {
+  const sliderContainers = document.querySelectorAll(".sliderContainer");
+  let isDragging = false;
+  let startX, scrollLeft;
+
+  const end = () => {
+      isDragging = false;
+      sliderContainers.forEach(container => container.classList.remove('active'));
+  }
+
+  const start = (e) => {
+      isDragging = true;
+      const targetContainer = e.target.closest('.sliderContainer');
+      if (!targetContainer) return;
+      targetContainer.classList.add('active');
+      startX = e.clientX || e.touches[0].clientX - targetContainer.getBoundingClientRect().left;
+      scrollLeft = targetContainer.scrollLeft;
+  }
+
+  const move = (e) => {
+      if(!isDragging) return;
+
+      e.preventDefault();
+      const x = e.clientX || e.touches[0].clientX;
+      const dist = (x - startX);
+      const activeContainer = document.querySelector('.sliderContainer.active');
+      if (activeContainer) {
+          activeContainer.scrollLeft = scrollLeft - dist;
+      }
+  }
+
+  document.addEventListener('mousedown', start);
+  document.addEventListener('touchstart', start);
+
+  document.addEventListener('mousemove', move);
+  document.addEventListener('touchmove', move);
+
+  document.addEventListener('mouseleave', end);
+  document.addEventListener('mouseup', end);
+  document.addEventListener('touchend', end);
+});
+
+
 
 
 // Show/hide adviceAndTips function
@@ -59,23 +104,8 @@ document.addEventListener('DOMContentLoaded', function () {
   
 //   image slider on mainpage
 
-$(document).ready(function() {
-    const slideWidth = $('.slider img').outerWidth(true);
-    const visibleImages = 2.5;
 
-    $('.slider').on('click', function() {
-        const currentIndex = Math.floor(-parseFloat($('.slider').css('transform').split(',')[4]) / slideWidth);
-        const maxIndex = $('.slider img').length - Math.floor(visibleImages);
 
-        if (currentIndex < maxIndex) {
-            const newPosition = -((currentIndex + 1) * slideWidth);
-            $('.slider').animate({ 'left': newPosition }, 500);
-        } else {
-            // Move to the first set of images
-            $('.slider').animate({ 'left': 0 }, 500);
-        }
-    });
-});
 
 // shorten name on the mainpage
 
