@@ -992,7 +992,107 @@ font-size: 22px;
 padding-bottom: 20px;
 
 }
+
+#emergencyContact .adviceToggleContent h4{
+  text-decoration: underline;
+}
+
+#increasedTemperature .adviceToggleContent ul li::before {
+  content: '\2022'; /* Unicode character for bullet */
+  position: relative;
+  font-size: 25px;
+  right: 0.88em;
+  font-weight: 600;
+
+}
   
+#increasedTemperature .adviceToggleContent ul li {
+  font-size: 22px;
+  font-weight: normal;
+  margin-bottom: 30px;
+  list-style-position: inside;
+  list-style: none;
+  margin-left: 34px;
+  text-indent: -10px;
+}
+
+.medicines::before{
+  content: '\2022'; /* Unicode character for bullet */
+  position: relative;
+  font-size: 25px;
+  right: 0.88em;
+  font-weight: 600;
+}
+
+.medicines {
+  text-indent: -10px;
+  margin-left: 34px;
+}
+
+#sportMedicalExamination li::before{
+  content: '\2022'; /* Unicode character for bullet */
+  position: relative;
+  font-size: 25px;
+  right: 0.88em;
+  font-weight: 600;
+}
+
+#sportMedicalExamination li{
+  font-size: 22px;
+  font-weight: normal;
+  margin-bottom: 30px;
+  list-style-position: inside;
+  list-style: none;
+  margin-left: 34px;
+  text-indent: -10px;
+
+}
+
+.sportMedicalExaminationDoctors{
+  font-weight: normal;
+  font-size: 22px;
+  color: #160EAA;
+}
+
+#travelFirstAidKit li::before{
+  content: '\2022'; /* Unicode character for bullet */
+  position: relative;
+  font-size: 25px;
+  right: 0.88em;
+  font-weight: 600;
+}
+
+#travelFirstAidKit li {
+  font-size: 22px;
+  font-weight: normal;
+  margin-bottom: 30px;
+  list-style-position: inside;
+  list-style: none;
+  margin-left: 34px;
+  text-indent: -10px;
+}
+
+#vaccination h4, span{
+  font-size: 22px;
+}
+
+#vaccination li::before{
+  content: '\2022'; /* Unicode character for bullet */
+  position: relative;
+  font-size: 25px;
+  right: 0.88em;
+  font-weight: 600;
+}
+
+#vaccination .adviceToggleContent ul li{
+  font-size: 22px;
+  font-weight: normal;
+  margin-bottom: 30px;
+  list-style-position: inside;
+  list-style: none;
+  margin-left: 34px;
+  text-indent: -10px;
+}
 
 
 /*contact info section*/

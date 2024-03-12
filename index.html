@@ -331,7 +331,7 @@
     </div>
 
         <div class="adviceContainer">
-            <div class="adviceRollbox">
+            <div class="adviceRollbox" id="emergencyContact">
                 <div>
                     <h3 class="adviceToggle" aria-label="Kontakty a pohotovostní služby">Kontakty a pohotovostní služby</h3>
                 </div>
@@ -345,7 +345,7 @@
                     <h4>Záchranná služba na čísle 155 (pro cizince 112)</h4>
                 </div>
             </div>
-            <div class="adviceRollbox">
+            <div class="adviceRollbox" id="increasedTemperature">
                 <div>
                     <h3 class="adviceToggle" aria-label="Co s teplotou a počínající virosou">Co s teplotou a počínající virosou</h3>
                 </div>
@@ -377,9 +377,9 @@
                     <h4>Horečka</h4>
                     <p>Od 38.5°C, při hodnotě nad 40°C mluvíme o hyperpyrexii. Pokud dítěti naměříte horečku, vždy nejprve podejte lék na teplotu, nejezděte hned k lékaři bez podání léků. Efekt bude patrný s odstupem minimálně 30 minut.</p>
                     <h4>Léky</h4>
-                    <p><strong>Paracetamol</strong> (Paralen, Mexalen, Panadol, Paramax, apod.) podáme dítěti ve formě sirupu, čípků, větším dětem tablet. Čípky se nepodávají při průjmu, kvůli nedostatečnému vstřebávání účinné dávky. Podáváme maximálně 4x denně po 6 hodinách, 10-15 mg na kg (dávka dle váhy dítěte).</p>
-                    <p><strong>Ibuprofen</strong> (Ibalgin, Brufen, Nurofen, Ibuberl, Ibumax apod.), opět ve formě čípků, sirupu, tablet 4x denně po 6 hodinách 5-10 mg na kg jednotlivou dávku.</p>
-                    <p>Při vysokých teplotách je možno tyto 2 druhy léků na teplotu kombinovat. Tzn. Paralen, za 3 hodiny Ibalgin, za 3 hod. Paralen, za 3 hod. Ibalgin… atd. dle naměřené teploty.</p>
+                    <p class="medicines"><strong>Paracetamol</strong> (Paralen, Mexalen, Panadol, Paramax, apod.) podáme dítěti ve formě sirupu, čípků, větším dětem tablet. Čípky se nepodávají při průjmu, kvůli nedostatečnému vstřebávání účinné dávky. Podáváme maximálně 4x denně po 6 hodinách, 10-15 mg na kg (dávka dle váhy dítěte).</p>
+                    <p class="medicines"><strong>Ibuprofen</strong> (Ibalgin, Brufen, Nurofen, Ibuberl, Ibumax apod.), opět ve formě čípků, sirupu, tablet 4x denně po 6 hodinách 5-10 mg na kg jednotlivou dávku.</p>
+                    <p>Při vysokých teplotách je možno tyto 2 druhy léků na teplotu <strong>kombinovat</strong>. Tzn. Paralen, za 3 hodiny Ibalgin, za 3 hod. Paralen, za 3 hod. Ibalgin… atd. dle naměřené teploty.</p>
                     <p>Pokud po 3 hodinách po podání léku na teplotu teplota nestoupne, není třeba podávat lék preventivně.</p>
                     <p>Pokud jen podávání léků nestačí, je možno dítě osprchovat ve vlažné vodě nebo dát chlazení do třísel, na hlavičku, hrudník.</p>
                     <p>Pokud teplota nejde výrazněji srazit nebo trvá více než 3 dny, navštivte lékaře.</p>
@@ -392,7 +392,7 @@
                 </div>
                 <div class="adviceToggleContent">
                     <p>V případě požití neznámé nebo jedovaté látky v případě nedostupnosti lékaře získáte informace na:</p>
-                    <p><strong>Toxiokologickém informačním středisku v Praze (TIS)</strong> Non-stop telefonická poradna – 224 919 293, 224 915 402</p>
+                    <p><strong>Toxiokologickém informačním středisku v Praze (TIS)</strong></p><p>Non-stop telefonická poradna – 224 919 293, 224 915 402</p>
                 </div>
             </div>
         </div>
@@ -417,10 +417,10 @@
                   <h3 class="adviceToggle" aria-label="Vystavení posudku">Vystavení posudku</h3>
                 </div>
                 <div class="adviceToggleContent">
-                    <p>Potvrzení o zdravotním stavu (zdravotní posudek) do školky, na tábor, na lyžařský kurz apod. nenechávejte na poslední chvíli. Posudek musí vystavit registrující lékař, zastupující lékař řeší pouze akutní zdravotní stav.</p>
+                    <p>Potvrzení o zdravotním stavu (zdravotní posudek) do školky, na tábor, na lyžařský kurz apod. nenechávejte na poslední chvíli. Posudek <strong>musí vystavit registrující lékař</strong>, zastupující lékař řeší pouze akutní zdravotní stav.</p>
                 </div>
             </div>
-            <div class="adviceRollbox">
+            <div class="adviceRollbox" id="sportMedicalExamination">
                 <div>
                     <h3 class="adviceToggle" aria-label="Sportovní prohlídky">Sportovní prohlídky</h3>
                 </div>
@@ -433,14 +433,14 @@
                     <p>Vrcholový sport a zdravotně náročné disciplíny(box, judo, karate, motorismus, maraton, triatlon, potápění, házená aj.). Je nutná prohlídka u sportovního či tělovýchovného lékaře. Je možno se objednat:</p>
                     <h4>Dětský kardiolog</h4>
                     <ul>
-                    <li><a href="https://www.nemopisek.cz/ambulance/detska-kardiologicka-poradna/" title="MUDr. Jan Kylián - kardiologická poradna" aria-label="MUDr. Jan Kylián - kardiologická poradna">MUDr. Jan Kylián</a> tel. 722 490 050, kylian.kardio@seznam.cz (v Písku ve středu)</li>
+                    <li><a class="sportMedicalExaminationDoctors" href="https://www.nemopisek.cz/ambulance/detska-kardiologicka-poradna/" title="MUDr. Jan Kylián - kardiologická poradna" aria-label="MUDr. Jan Kylián - kardiologická poradna">MUDr. Jan Kylián</a> tel. 722 490 050, kylian.kardio@seznam.cz (v Písku ve středu)</li>
                     </ul>
                     <h4>Tělovýchovní lékaři</h4>
                     <ul>
-                        <li><a href="https://www.firmy.cz/detail/389698-mudr-jiri-tuhacek-strakonice-i.html" title="MUDr. Jiří Tuháček" aria-label="MUDr. Jiří Tuháček">MUDr. Jiří Tuháček</a> (Strakonice) tel. 383 333 96</li>
-                        <li><a href="https://www.firmy.cz/detail/395306-mudr-miloslav-budil-tabor.html" title="MUDr. Miloslav Budil" aria-label="MUDr. Miloslav Budil">MUDr. Miloslav Budil</a> (Tábor) tel. 381 263 851</li>
-                        <li><a href="https://www.firmy.cz/detail/388091-mudr-ivana-prollova-ceske-budejovice-7.html" title="MUDr. Ivana Prollová" aria-label="MUDr. Ivana Prollová">MUDr. Ivana Prollová</a> (České Budějovice) tel. 387 730 289</li>
-                        <li><a href="https://www.firmy.cz/detail/370775-mudr-milada-novakova-ceske-budejovice-6.html" title="MUDr. Milada Nováková" aria-label="MUDr. Milada Nováková">MUDr. Milada Nováková</a> (České Budějovice) tel. 387 730 289</li>
+                        <li><a class="sportMedicalExaminationDoctors" href="https://www.firmy.cz/detail/389698-mudr-jiri-tuhacek-strakonice-i.html" title="MUDr. Jiří Tuháček" aria-label="MUDr. Jiří Tuháček">MUDr. Jiří Tuháček</a> (Strakonice) tel. 383 333 96</li>
+                        <li><a class="sportMedicalExaminationDoctors" href="https://www.firmy.cz/detail/395306-mudr-miloslav-budil-tabor.html" title="MUDr. Miloslav Budil" aria-label="MUDr. Miloslav Budil">MUDr. Miloslav Budil</a> (Tábor) tel. 381 263 851</li>
+                        <li><a class="sportMedicalExaminationDoctors" href="https://www.firmy.cz/detail/388091-mudr-ivana-prollova-ceske-budejovice-7.html" title="MUDr. Ivana Prollová" aria-label="MUDr. Ivana Prollová">MUDr. Ivana Prollová</a> (České Budějovice) tel. 387 730 289</li>
+                        <li><a class="sportMedicalExaminationDoctors" href="https://www.firmy.cz/detail/370775-mudr-milada-novakova-ceske-budejovice-6.html" title="MUDr. Milada Nováková" aria-label="MUDr. Milada Nováková">MUDr. Milada Nováková</a> (České Budějovice) tel. 387 730 289</li>
                     </ul>
                     <p>Výpis ze zdravotní dokumentace pro specialistu není možné provádět na počkání.</p>
                 </div>
@@ -450,7 +450,7 @@
         <h3>Doporučení a tipy</h3>
         </div>
         <div class="adviceContainer">
-            <div class="adviceRollbox">
+            <div class="adviceRollbox" id="travelFirstAidKit">
                 <div>
                     <h3 class="adviceToggle" aria-label="Lékárnička na dovolenou">Lékárnička na dovolenou</h3>
                 </div>
@@ -467,7 +467,7 @@
                     <p>Nezapomeňte také léky, které vaše dítě užívá trvale. Přejeme vám šťastnou cestu!</p>
                 </div>
             </div>
-            <div class="adviceRollbox">
+            <div class="adviceRollbox" id="vaccination">
                 <div>
                     <h3 class="adviceToggle" aria-label="Volitelné nadstandartní očkování">Volitelné nadstandartní očkování</h3>
                 </div>
