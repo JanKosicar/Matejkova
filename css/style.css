@@ -97,7 +97,7 @@ body{
   
 }
 
-.mainPage header::after {
+/* .mainPage header::after {
   content: "";
   position: absolute;
   top: 295px;
@@ -109,7 +109,7 @@ body{
   z-index: 2;
   opacity: 1;
   overflow-x: hidden;
-}
+} */
 
 
 .containerFluid{
@@ -924,13 +924,13 @@ tr {
 .adviceAndTipsInside > h2{
   font-size: 65px;
   margin-bottom: 5px ;
-  margin-left: 10.4vw;
+  margin-left: 70px;
 }
 
 .adviceAndTipsInside > h3{
   font-size: 45px ;
-  margin: 60px 0 30px 10.4vw;
-
+  margin: 60px 0 30px 70px;
+  font-family: 'Larsseit';
 }
 
 .adviceAndTipsInside{
@@ -962,7 +962,7 @@ tr {
   width: 800px;
   margin-bottom: 10px;
   border-radius: 22px;
-  margin-left: 10.4vw;
+  margin-left: 70px;
 
 }
 
@@ -971,12 +971,16 @@ tr {
   cursor: pointer;
 }
 
-
+.adviceToggle{
+  font-family: 'Larsseit';
+  
+}
 
 
 .adviceToggleContent{
 margin: 0 60px 0 40px;
 display: none;
+padding-bottom: 27px;
 }
 
 .adviceToggleContent h4{
@@ -1106,10 +1110,10 @@ padding-bottom: 20px;
   padding: 82px 0;
 }
 
-.contactInfo > h2{
+.contactInfo h2{
   font-size: 65px;
   font-weight: bold;
-  margin: 0 0 42px 10.4vw;
+  margin: 0 0 0 10.4vw;
 
 }
 
@@ -1119,17 +1123,19 @@ padding-bottom: 20px;
 
 .mainPage .contactContainerTelInside::after {
   content: "";
-  position: absolute;
-  top: 135px;
-  right: -250px;
-  width: 60vw;
-  height: 40vw;
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 442px; /* šířka obrázku */
+  height: 510px; /* výška obrázku */
   background: url('../img/Drak.svg') no-repeat; 
   background-size: contain;
   z-index: -1;
   opacity: 1;
   overflow: hidden;
+  clip-path: polygon(calc(100vw - 442px) 0, 100% 80%, 80% 100%, 0 100%, 0 0); /* oříznutí obrázku, 442px od pravého okraje */
 }
+
 
 
 
@@ -1175,7 +1181,7 @@ padding-bottom: 20px;
 
 .contactContainerTelInside  a{
   font-size: 45px;
-  margin-left: 30px;
+  /* margin-left: 30px; */
   color: inherit;
   text-decoration: inherit;
   
@@ -1254,9 +1260,9 @@ padding-bottom: 20px;
 }
 
 .contactContainerAddressInside div{
-  display: inline-block;
-  /* align-items: center; */
-  vertical-align: baseline;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 
@@ -1278,7 +1284,7 @@ address {
   color: inherit;
   font-style: normal;
   margin-right: 215px;
-  margin-top: 21px;
+ 
   white-space: nowrap;
   font-size: 30px;
 }
@@ -1325,6 +1331,7 @@ address a:hover{
 
 .buildingDescription > p{
   margin-left: 10.4%;
+  font-size: 22px;
 }
 
 /* footer section */

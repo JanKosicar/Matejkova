@@ -7,7 +7,7 @@
 
     /* contact info section */
 
-    .ordinancePhoto :nth-of-type(1){
+    #ordinancePhoto :nth-of-type(1){
         margin-left: 0;
     }  
 
@@ -43,9 +43,7 @@
         
     }
 
-    .insuranceLogoContainer{
-        display: none;
-    }
+    
 
     /* Staff section */
 
@@ -73,11 +71,48 @@
         margin: 25vw 0 0 5vw;
     }
 
+
     /* patientsRewiev */
+
+     /* adviceAndTips section */
+
+     .adviceAndTipsInside > h3{
+        margin: 30px 0 15px 20px;
+     }
+
+     .adviceContainer h3{
+        margin: 23px 0 23px 20px;
+     }
+
+     .adviceRollbox{
+        margin-left: 20px;
+     }
+
+     .adviceToggleContent{
+        margin: 0 25px 0 20px ;
+     }
+
 
     /* contact info section */
 
-    .ordinancePhoto :nth-of-type(1){
+    .mainPage .contactContainerTelInside::after{
+        display: none;
+      }
+
+    .contactContainerAddressInside div{
+        flex-direction: column;
+    }
+
+    .contactContainerAddressInside div h5{
+        margin-left: 70px;
+    }
+
+    address{
+        margin-left: 70px;
+        margin-top: 21px;
+    }
+
+    #ordinancePhoto :nth-of-type(1){
         margin-left: 4.8vw;
     }  
 
@@ -125,9 +160,7 @@
         margin: 0 0 0 0;
     }
 
-    .menu-links li a{
-
-    }
+    
 
     .hamburger-icon{
         padding: 0;
@@ -371,6 +404,11 @@
 
     /*advice and tips section*/
 
+    .adviceAndTips{
+        padding: 0 0 40px 0;
+        
+    }
+
     .adviceAndTipsInside > h2{
         font-size: 55px;
         margin-left: 20px;
@@ -392,10 +430,17 @@
 
       /*contact info section*/
 
-      .contactInfo > h2{
-        font-size: 55px;
-        margin-left: 20px;
+      .contactInfo{
+        padding-top: 40px;
       }
+
+      .contactInfo h2{
+        font-size: 55px;
+        margin-left: 0px;
+        transform: translateY(5px);
+      }
+
+      
 
 
 
@@ -404,12 +449,18 @@
         flex-direction: column;
       }
 
+      #phoneIconEndOfaPage{
+        margin-top: 0 !important;
+      }
+
       .contactContainerTel  ul{
         font-size: 17px;
+       margin-left: 0;
       }
 
       .contactContainerTelInside{
         flex-direction: column;
+        align-items: flex-start;
       }
 
       .contactContainerTelInside  img{
@@ -417,11 +468,12 @@
         width: 86px;
         height: 83px;
         position: static;
+        margin-left: 5px;
       }
 
       .contactContainerTelInside  a{
         font-size: 25px;
-        display: block;
+        margin-left: 0px;
       }
 
       .contactContainerEmail .postIcon{
@@ -460,7 +512,7 @@
         z-index: -1;
       }
 
-      .ordinancePhoto :nth-of-type(1){
+      #ordinancePhoto :nth-of-type(1){
         margin-left: 20px;
       }  
     
@@ -486,7 +538,7 @@
         margin-left: 0;
     }
 
-    .ordinancePhoto :nth-of-type(1){
+    #ordinancePhoto :nth-of-type(1){
         margin-left: 0px;
       }  
 }
