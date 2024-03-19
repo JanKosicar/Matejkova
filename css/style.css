@@ -923,14 +923,14 @@ tr {
 
 .adviceAndTips {
   background-color: #D6EDF0;
-  padding: 82px 0 100px 0;
+  padding: 82px 0 150px 0;
   width: 100%;
 }
 
 .adviceAndTipsInside > h2{
   font-size: 65px;
   margin-bottom: 5px ;
-  margin-left: 70px;
+  margin-left: 150px;
 }
 
 .adviceAndTipsInside > h3{
@@ -1355,8 +1355,9 @@ address a:hover{
 
 
 .buildingDescription > p{
-  margin-left: 10.4%;
+  margin-left: 150px;
   font-size: 22px;
+  max-width: 700px;
 }
 
 /* footer section */
@@ -1366,7 +1367,7 @@ address a:hover{
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin: 0 10.4% 0 10.4%;
+  margin: 0 150px 0 150px;
   
   
 
