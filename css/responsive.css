@@ -3,9 +3,31 @@
 
 /* 1600px + */
 
-@media screen and (min-width: 1600px){
+@media screen and (min-width: 1450px){
 
     /* contact info section */
+
+    .contactInfo h2{
+        margin-left: 390px;
+    }
+
+    #phoneIconEndOfaPage{
+        margin-left: 375px;
+    }
+
+    .contactContainerTel  ul{
+        margin-left: 390px;
+    }
+
+    .contactContainerTel img{
+        margin-left: 375px;
+    }
+
+    .contactContainerTel p{
+        margin-left: 390px;
+    }
+
+
 
     #ordinancePhoto :nth-of-type(1){
         margin-left: 0;
@@ -119,50 +141,60 @@
         display: none;
       }
 
+      .contactContainerTel h2 {
+        margin-left: 70px !important;
+      }
+
+      #phoneIconEndOfaPage{
+        margin-left: 65px !important;
+      }
+
       .contactContainerTel  ul{
-        margin: 0 0 0 20px;
-        font-size: 17px;
+        margin: 0 0 0 70px;
+        
         
       }
     
       .contactContainerEmail{
         flex-direction: column;
+        align-items: flex-start;
       }
 
-      .contactContainerEmail > a{
-        margin-left: 20px;
-        font-size: 25px ;
-      }
+      
 
 
     .contactContainerEmail > img {
-        margin-left: 12px ;
+        margin-left: 65px ;
         margin-bottom: 18px;
+        margin-top: 55px;
+    }
+
+    .contactContainerEmail a{
+        margin-left: 70px;
     }
 
     .emailList p{
-        margin: 0 0 25px 20px;
-        font-size: 17px;
+        margin: 0 70px 25px 70px;
+       
     }
 
     .contactContainerAddressInside div{
         flex-direction: column;
+        align-items: flex-start;
+        margin-top: 50px;
     }
 
     .contactContainerAddressInside div h5{
-        margin-left: 20px;
+        margin-left: 70px;
     }
 
     .spendlik{
-        
-        width: 85px;
-        height: 80px;
-        margin: 0 0 18px 12px;
+        margin: 0 0 18px 65px;
         
     }
 
     address{
-        margin: 21px 0 30px 20px;
+        margin: 21px 0 30px 70px;
         
     }
 
@@ -506,33 +538,37 @@
 
       .contactInfo h2{
         font-size: 55px;
-        margin-left: 0px;
+        margin-left: 0px !important;
         
       }
 
-      #phoneIconEndOfaPage{
-        margin-left: 0px;
-      }
+      
 
 
 
       .contactContainerTel{
         margin-left: 20px;
         flex-direction: column;
+        align-items: flex-start;
       }
 
       #phoneIconEndOfaPage{
-        margin-top: 0 !important;
+        margin-left: 0 !important;
       }
 
       .contactContainerTel  ul{
         font-size: 17px;
-       margin-left: 0;
+       margin-left: 0 ;
+      }
+
+      .contactContainerTel h2 {
+        margin-left: 0 !important;
       }
 
       .contactContainerTelInside{
         flex-direction: column;
         align-items: flex-start;
+        margin: 0 0 0 0;
       }
 
       .contactContainerTelInside  img{
@@ -560,6 +596,7 @@
 
       .contactContainerEmail{
         flex-direction: column;
+        align-items: flex-start;
       }
       
       .contactContainerEmail a{
@@ -569,6 +606,14 @@
       .contactContainerAddressInside div{
         flex-direction: column;
       }
+
+      .spendlik{
+        
+        width: 85px;
+        height: 80px;
+        margin: 0 0 18px 65px;
+        
+    }
 
       
 
