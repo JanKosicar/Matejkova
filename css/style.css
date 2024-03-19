@@ -50,7 +50,7 @@ body{
   }
 
   .attention{
-    margin-left: max(4.8vw, 10px);
+    margin-left: 70px;
     font-size: 16px;
   }
 
@@ -97,7 +97,7 @@ body{
   
 }
 
-/* .mainPage header::after {
+.mainPage header::after {
   content: "";
   position: absolute;
   top: 295px;
@@ -109,7 +109,7 @@ body{
   z-index: 2;
   opacity: 1;
   overflow-x: hidden;
-} */
+}
 
 
 .containerFluid{
@@ -144,7 +144,7 @@ body{
 
 
 .logo {
-  margin-left: max(4.8vw, 10px);
+  margin-left: 70px;
   min-width: 304px;
 }
 
@@ -357,8 +357,7 @@ body{
 .mainContact{
 display: flex;
 flex-direction: column;
-margin:30px 0 0 9.3vw;
-
+margin:30px 0 0 136px;
 }
 
 .mainContactContainer{
@@ -663,18 +662,18 @@ align-items: center;
 .staffJanaMatejkova img{
   position: absolute;
   height: auto;
-  width: 31.5vw;
+  width: 400px;
   max-height: 415px;
   max-width: 440px;
 }
 
 .staffContainer{
-  margin: 0 0 0 8.4vw;
+  margin: 0 0 0 100px;
 }
 
 .staffJanaMatejkova div{
-  margin: 40px 0 120px 38.2vw;
-  max-width: 58vw;
+  margin: 35px 0 90px 500px;
+  max-width: 700px;
 }
 
 .staffJanaMatejkova h3{
@@ -686,7 +685,8 @@ align-items: center;
   margin-top: 18px;
   font-size: 22px;
   max-width: 700px;
-  margin-right: 40px;
+  margin-right: 110px;
+  overflow-wrap: normal;
 }
 
 
@@ -697,17 +697,17 @@ align-items: center;
 }
 
 .staffIrenaPodlahova img{
-  margin: 10px 0 0 205px;
+  margin: 0px 0 0 170px;
   max-height: 288px;
   position: absolute;
   height: auto;
-  width: 21vw;
-  max-width: 306px;
+  width: 300px;
+  
 }
 
 .staffIrenaPodlahova div{
-  margin: 60px 0 0 38.2vw;
-  max-width: 50vw;
+  margin: 60px 0 0 500px;
+  max-width: 700px;
 }
 
 .staffIrenaPodlahova h3{
@@ -722,6 +722,9 @@ align-items: center;
   font-weight: normal;
   max-width: 700px;
   margin-bottom: 150px;
+  margin-right: 110px;
+  overflow-wrap: normal;
+  
 }
 
 /* Slider section */
@@ -825,10 +828,13 @@ width: 16.9vw;
   line-height: 1.5;
 }
 
+.searchEngine a:hover{
+  text-decoration: inherit;
+}
+
 .otherRewievs a{
   font-size: 22px;
   color: inherit;
-  text-decoration: inherit;
   margin-right: 50px;
 
 }
@@ -1113,9 +1119,17 @@ padding-bottom: 20px;
 .contactInfo h2{
   font-size: 65px;
   font-weight: bold;
-  margin: 0 0 0 10.4vw;
+  margin: 0 0 0 150px;
 
 }
+
+#phoneIconEndOfaPage{
+  margin: 32px 29px 0  136px ;
+  height: 115px;
+  width: auto;
+}
+
+
 
 
 
@@ -1123,17 +1137,17 @@ padding-bottom: 20px;
 
 .mainPage .contactContainerTelInside::after {
   content: "";
-  position: fixed;
+  position: absolute;
   top: 0;
   right: 0;
-  width: 442px; /* šířka obrázku */
+  width: calc(100% + 442px); /* šířka obrázku + 100% šířky rodičovského prvku */
   height: 510px; /* výška obrázku */
   background: url('../img/Drak.svg') no-repeat; 
   background-size: contain;
   z-index: -1;
   opacity: 1;
   overflow: hidden;
-  clip-path: polygon(calc(100vw - 442px) 0, 100% 80%, 80% 100%, 0 100%, 0 0); /* oříznutí obrázku, 442px od pravého okraje */
+  clip-path: polygon(100% 0, 100% 80%, 80% 100%, 0 100%, 0 0); /* oříznutí obrázku, 442px od pravého okraje */
 }
 
 
@@ -1145,7 +1159,7 @@ padding-bottom: 20px;
   justify-content: space-between;
   
   font-size: 22px;
-  margin: 0 0 100px 10.4vw;
+  margin: 0 0 100px 150px;
 
 }
 
@@ -1173,7 +1187,7 @@ padding-bottom: 20px;
 .contactContainerTelInside > img  {
   height: auto;
   width: 126px;
-  margin-left: 9.4vw;
+  margin-left: 135px;
   
   
   
@@ -1203,7 +1217,7 @@ padding-bottom: 20px;
 
 .contactContainerEmail{
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   margin-bottom: 25px;
 }
 
@@ -1211,7 +1225,7 @@ padding-bottom: 20px;
 .contactContainerEmail > img{
   height:  auto ;
   width: 121px;
-  margin-left: 9.4vw;
+  margin-left: 135px;
 }
 
 .contactContainerEmail > a{
@@ -1222,13 +1236,15 @@ padding-bottom: 20px;
 
 }
 
+
+
 .contactContainerEmail > a:hover{
   text-decoration: underline;
 }
 
 
 .emailList p{
-  margin: 0 0 25px 10.4vw;
+  margin: 0 0 25px 150px;
   font-size: 22px;
 }
 
@@ -1240,7 +1256,7 @@ padding-bottom: 20px;
 
 .contactContainerAddress{
   display: flex;
-  align-items: center;
+  
   justify-content: space-between;
 }
 
@@ -1261,8 +1277,9 @@ padding-bottom: 20px;
 
 .contactContainerAddressInside div{
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   justify-content: center;
+
 }
 
 
@@ -1312,7 +1329,7 @@ address a:hover{
   align-items: flex-start;
 }
 
-.ordinancePhoto :nth-of-type(1){
+#ordinancePhoto :nth-of-type(1){
   margin-left: 70px;
 }  
 

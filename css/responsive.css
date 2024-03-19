@@ -22,7 +22,7 @@
     }
 
 
-    /* header nav hamburger */
+    /* header nav hamburger 1250- */
   
     #desktop-nav {
       display: none;
@@ -31,7 +31,11 @@
       display: flex;
   }
 
-  /*Doctors office  section*/
+  .detailBox h1{
+    margin: 0 20px 0 20px;
+  }
+
+  /*Doctors office  section 1250- */
     .officeHeading{
         flex-direction: column;
     }
@@ -43,9 +47,25 @@
         
     }
 
+    .mainContact{
+        margin: 15px 0 0 136px;
+    }
+
+    .mainContactContainer :nth-child(2){
+        max-width: 250px;
+    }
+
     
 
-    /* Staff section */
+    .welcomePhoto{
+        width: 450px;
+        height: auto;
+        left: 560px;
+    }
+
+    
+
+    /* Staff section 1250- */
 
     .staffJanaMatejkova{
         justify-content: center;
@@ -72,9 +92,9 @@
     }
 
 
-    /* patientsRewiev */
+    /* patientsRewiev 1250- */
 
-     /* adviceAndTips section */
+     /* adviceAndTips section 1250- */
 
      .adviceAndTipsInside > h3{
         margin: 30px 0 15px 20px;
@@ -93,24 +113,65 @@
      }
 
 
-    /* contact info section */
+    /* contact info section 1250- */
 
     .mainPage .contactContainerTelInside::after{
         display: none;
       }
+
+      .contactContainerTel  ul{
+        margin: 0 0 0 20px;
+        font-size: 17px;
+        
+      }
+    
+      .contactContainerEmail{
+        flex-direction: column;
+      }
+
+      .contactContainerEmail > a{
+        margin-left: 20px;
+        font-size: 25px ;
+      }
+
+
+    .contactContainerEmail > img {
+        margin-left: 12px ;
+        margin-bottom: 18px;
+    }
+
+    .emailList p{
+        margin: 0 0 25px 20px;
+        font-size: 17px;
+    }
 
     .contactContainerAddressInside div{
         flex-direction: column;
     }
 
     .contactContainerAddressInside div h5{
-        margin-left: 70px;
+        margin-left: 20px;
+    }
+
+    .spendlik{
+        
+        width: 85px;
+        height: 80px;
+        margin: 0 0 18px 12px;
+        
     }
 
     address{
-        margin-left: 70px;
-        margin-top: 21px;
+        margin: 21px 0 30px 20px;
+        
     }
+
+    .auticko{
+        width: 110px;
+        height: 77px;
+        z-index: -1;
+        left: 264px;
+      }
 
     #ordinancePhoto :nth-of-type(1){
         margin-left: 4.8vw;
@@ -120,6 +181,12 @@
         /* white-space: nowrap; */
     }
     
+}
+
+@media only screen and (max-width: 1080px){
+    .mainContact{
+        margin: 20px 0 0 106px;
+    }
 }
 
 @media only screen and (max-width: 780px) {
@@ -207,7 +274,7 @@
     }
 
     .mainContact {
-        margin: 250px 0 0 20px;
+        margin: 320px 0 0 160px;
     }
 
     .mainConsult :nth-child(1){
@@ -224,7 +291,10 @@
 
     .mainContactContainer {
         flex-direction: column;
+
     }
+
+
 
     .phoneIcon{
         width: 83px;
@@ -251,19 +321,19 @@
     }
 
     .welcomePhoto{
-        width: 307px;
+        width: 400px;
         height: auto;
-        left: 13vw;
+        left: 150px;
     }
 
-    /* backToTopButton */
+    /* backToTopButton 780- */
 
     #backToTopBtn{
         height: 55px;
         width: 55px;
     }
 
-    /*Doctors office  section*/
+    /*Doctors office  section 780- */
 
     .officeHeading{
         margin-left: 20px;
@@ -306,7 +376,7 @@
 
     }
 
-    /* Staff section */
+    /* Staff section 780-  */
 
     .staffContainer{
         margin-left: 20px;
@@ -323,7 +393,7 @@
         margin: 400px 0 0 0;
     }
 
-    /* PatientsRewievSection */
+    /* PatientsRewievSection 780- */
 
     .rewievFromPatients h2{
         font-size: 38px;
@@ -361,7 +431,7 @@
         margin-right: 3.4vw;
     }
 
-    /* officeHoursSection */
+    /* officeHoursSection 780- */
 
     .officeHours h2{
         font-size: 38px;
@@ -402,7 +472,7 @@
         font-size: 17px;
     }
 
-    /*advice and tips section*/
+    /*advice and tips section 780- */
 
     .adviceAndTips{
         padding: 0 0 40px 0;
@@ -428,7 +498,7 @@
         margin-left: 20px;
       }
 
-      /*contact info section*/
+      /*contact info section 780- */
 
       .contactInfo{
         padding-top: 40px;
@@ -437,10 +507,12 @@
       .contactInfo h2{
         font-size: 55px;
         margin-left: 0px;
-        transform: translateY(5px);
+        
       }
 
-      
+      #phoneIconEndOfaPage{
+        margin-left: 0px;
+      }
 
 
 
@@ -498,19 +570,11 @@
         flex-direction: column;
       }
 
-      .spendlik{
-        width: 85px;
-        height: 80px;
-        margin: 0 0 18 0;
-      }
+      
 
       
 
-      .auticko{
-        width: 110px;
-        height: 77px;
-        z-index: -1;
-      }
+      
 
       #ordinancePhoto :nth-of-type(1){
         margin-left: 20px;
@@ -528,6 +592,16 @@
     .logo{
         margin: 0 0 0 20px;
         padding: 0 0 0 0;
+    }
+
+    .welcomePhoto{
+        width: 307px;
+        height: auto;
+        left: 13vw;
+    }
+
+    .mainContact{
+        margin: 250px 0 0 20px;
     }
 
     .staffJanaMatejkova div{
