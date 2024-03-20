@@ -5,7 +5,31 @@
 
 @media screen and (min-width: 1450px){
 
-    /* contact info section */
+    /* patientRewiev */
+
+    .rewievFromPatients h2{
+        margin-left: 390px;
+    }
+
+    .otherRewievs{
+        margin-left: 514px;
+    }
+
+    /* AdviceAndTips inside 1600+ */
+
+    .adviceAndTipsInside > h2{
+        margin-left: 390px;
+    }
+
+    .adviceAndTipsInside > h3{
+        margin-left: 390px;
+    }
+
+    .adviceRollbox{
+        margin-left: 390px;
+     }
+
+    /* contact info section 1600+*/
 
     .contactInfo h2{
         margin-left: 390px;
@@ -117,9 +141,35 @@
         margin: 25vw 0 0 5vw;
     }
 
+    /* Slider section 780- */
+
+    .sliderContainer img{
+
+        max-height: 250px;
+    }
+
 
     /* patientsRewiev 1250- */
 
+    .patientRewiev,
+    .rewievFromPatients h2{
+        margin-left: 70px;
+    }
+
+    .otherRewievs{
+        margin-left: 137px;
+    }
+
+    /* OfficeHoursTable 1250-*/
+
+    .officeHours p,
+    .officeHours h5,
+    .officeHours h2,
+    .officeHours table{
+        margin-left: 70px;
+    }
+
+   
      /* adviceAndTips section 1250- */
 
      .adviceAndTipsInside > h2{
@@ -434,6 +484,13 @@
 
     .janaMatejkovaParagraph{
         margin: 400px 0 0 0;
+    }
+
+    /* Slider section 780- */
+
+    .sliderContainer img{
+
+        max-height: 180px;
     }
 
     /* PatientsRewievSection 780- */
