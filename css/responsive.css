@@ -5,7 +5,15 @@
 
 @media screen and (min-width: 1450px){
 
-    /* patientRewiev */
+    /*Doctors office  section 1600+*/
+
+    .officeNav,
+    .doctorsOffice p,
+    .officeHeading{
+        margin-left: 390px;
+    }
+
+    /* patientRewiev 1600+*/
 
     .rewievFromPatients h2{
         margin-left: 390px;
@@ -84,17 +92,24 @@
   .detailBox h1{
     margin: 0 20px 0 20px;
   }
-
-  /*Doctors office  section 1250- */
-    .officeHeading{
-        flex-direction: column;
+ .welcomePhoto{
+        width: 450px;
+        height: auto;
+        left: 560px;
     }
+
+        
+
+
+  
+    
 
     .officeHeading div{
         margin-top: 30px;
-        max-width: 150px;
-        min-width: none;
-        
+        max-width: 322px;
+        min-width: 322px;
+        margin-left: 0;
+        right: 75px;
     }
 
     .mainContact{
@@ -105,14 +120,29 @@
         max-width: 250px;
     }
 
-    
+    /*Doctors office  section 1250- */
 
-    .welcomePhoto{
-        width: 450px;
-        height: auto;
-        left: 560px;
+
+    .doctorsOffice{
+        padding-top: 0px;
     }
 
+    .doctorsOffice h2{
+                max-width: 250px;
+                margin-right: 100px;
+                margin-top: 100px;
+                
+            }
+   
+    .officeNav,
+    .doctorsOffice p,
+    .officeHeading{
+        margin-left: 70px;
+    }
+
+    .doctorsOffice p{
+        max-width: 82vw;
+    }
     
 
     /* Staff section 1250- */
@@ -141,7 +171,7 @@
         margin: 25vw 0 0 5vw;
     }
 
-    /* Slider section 780- */
+    /* Slider section 1250- */
 
     .sliderContainer img{
 
@@ -169,6 +199,10 @@
         margin-left: 70px;
     }
 
+    .officeHours p{
+        max-width: 85vw;
+    }
+
    
      /* adviceAndTips section 1250- */
 
@@ -186,6 +220,7 @@
 
      .adviceRollbox{
         margin-left: 70px;
+        max-width: 75vw;
      }
 
      .adviceToggleContent{
@@ -428,46 +463,70 @@
 
     /*Doctors office  section 780- */
 
+    
+    
+
+   .doctorsOffice h2{
+    font-size: 55px;
+    margin-right: 0;
+    margin-top: 90px;
+    line-height: 1;
+   }
+
+   .officeHeading div{
+    width: 178px !important;
+    max-width: 178px;
+    min-width: 178px;
+    max-height: 38px;
+    top: 20px;
+    right: 30px;
+    position: absolute;
+   }
+
+   .officeHeading div a{
+    font-size: 17px;
+    margin: 0 18px 0 18px;
+   }
+
+   .doctorsOffice{
+    padding-top: 0;
+    }
+
+
+
+    .officeNav,
+    .doctorsOffice p,
     .officeHeading{
         margin-left: 20px;
-        flex-direction: column;
-        max-width: 90vw;
     }
 
-    .doctorsOffice h2 {
-        font-size: 38px;
-        margin: 0 0 0 0;
+    .officeNav{
+        margin-top: 30px;
     }
 
-    .officeHeading a  {
-        font-size: 25px;
-        max-width: 90vw;
-        width: 100%;
+    .doctorsOffice p,
+    .doctorsOffice a,
+    .doctorsOffice p a{
+        font-size: 17px;
+    }
+
+    .officeNav a{
+        margin-right: 30px;
     }
 
     .doctorsOffice p{
-        margin: 30px 0 0 20px;
-        max-width: 90vw;
-    }
-
-    .officeHeading div{
-        width: 80px;
-        border-radius: 30px;
-        height: 59px;
-        max-width: 85vw;
-    }
-
-    .officeNav{
-        margin: 0 0 0 20px;
-    }
-
-    .officeNav{
         margin-top: 20px;
-        line-height: 2;
-        text-align: center;
-        max-width: 90vw;
-
     }
+
+
+    /* InsuranceLogo 780- */
+
+    .insuranceLogo {
+   
+    height: 65 px;
+    
+  }
+
 
     /* Staff section 780-  */
 
@@ -533,23 +592,32 @@
 
     /* officeHoursSection 780- */
 
+    .officeHours{
+        padding: 40px 0 50px 0 ;
+    }
+
     .officeHours h2{
-        font-size: 38px;
+        font-size: 45px;
         margin-left: 20px;
+        max-width: 220px;
+        line-height: 1;
     }
 
     .officeHours h5{
         margin-left: 20px;
         font-size: 25px;
+        margin-top: 32px;
     }
 
     .officeHours p{
         margin-left: 20px;
         font-size: 17px;
+        margin-top: 12px;
     }
 
     .officeHours table{
         margin-left: 20px;
+        margin-top: 20px;
     }
 
     thead th {
@@ -592,6 +660,7 @@
     .adviceRollbox{
         margin-left: 20px;
         border-radius: 16px;
+        
       }
 
       .adviceContainer h3{
@@ -751,6 +820,12 @@
         margin: 250px 0 0 20px;
     }
 
+    .currentNews{
+        display: none;
+    }
+
+    
+
     .staffJanaMatejkova div{
         margin-left: 0;
     }
@@ -758,6 +833,16 @@
     .staffIrenaPodlahova div{
         margin-left: 0;
     }
+
+    /* AdviceAndTips 600- */
+
+    .adviceRollbox{
+        width: 340px;
+      }
+
+      .adviceToggleContent{
+        margin-left: 20px;
+      }
 
     #ordinancePhoto :nth-of-type(1){
         margin-left: 0px;
