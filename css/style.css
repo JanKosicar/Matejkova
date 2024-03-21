@@ -182,11 +182,12 @@ header{
 }
 
 
+
 .nav-links{
   list-style: none;
   display: flex;
   flex-direction: row;
-  
+  position: relative;
 }
 
 .nav-links li a{
@@ -206,36 +207,39 @@ header{
 }
 
 .menu-links li a{
-  margin-left: 11.7vw ;
+  margin-left: 150px ;
   gap: 2rem;
   text-decoration: none;
   color: #160Eaa;
   font-weight: bold;
-  z-index: 999;
+  z-index: 100;
 }
 
 .menu-links > li >a:hover{
   text-decoration: underline;
-  z-index: 999;
+  z-index: 100;
 }
 
 #hamburger-menu {
  
 
-  z-index: 950;
+  z-index: 100;
 }
 
 .hamburger-icon {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  height: 21px;
+  height: 23px;
   width: 30px;
   cursor: pointer;
   display: none;
   padding: 0 200px 0 200px;
-  z-index: 999;
+  z-index: 1000;
   margin-top: 10px;
+  position: fixed;
+  right: max(10vw, 70px);
+  top: 100px;
 }
 
 .hamburger-icon span {
@@ -248,16 +252,42 @@ header{
 }
 
 .menu-links {
-  position: absolute;
-  top: 10px;
-  right: 0;
-  padding-top: 40px;
-  /* background-color: #D6EDF0; */
-  width: fit-content;
+  position: fixed;
+  top: 0px;
+  left:0px;
+  padding-top: 0px;
+  background-color: #D6EDF0;
+  height: 100vh;
+  width: 100vw;
   max-height: 0;
   overflow: hidden;
   transition: all 0.3 ease-in-out;
-  z-index: 950;
+  z-index: 200;
+
+}
+
+.menu-links::before{
+  content: "";
+  position: fixed;
+  top: 360px;
+  right: -25px;
+  width: 180px;
+  height: 1450px;
+  background: url('../img/Raketa.svg') no-repeat; 
+  background-size: contain;
+  z-index: 999;
+  opacity: 1;
+  overflow-x: hidden;
+}
+
+.menu-links li:last-child a {
+  font-size: 25px;
+  font-weight: normal;
+  margin-top: 87px;
+}
+
+.menu-links li:first-child a{
+  margin-top: 100px;
 }
 
 .menu-links a {

@@ -359,7 +359,8 @@
 
     .hamburger-icon{
         padding: 0;
-        margin-left: 43vw;
+        top: 40px;
+        right: 55px;
     }
 
     .hamburger-menu{

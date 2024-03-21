@@ -1,10 +1,18 @@
 // Hamburger menu navbar
 function toggleMenu(){
-    const menu = document.querySelector(".menu-links");
-    const icon = document.querySelector(".hamburger-icon");
-    menu.classList.toggle('open');
-    icon.classList.toggle('open');
+  const menu = document.querySelector(".menu-links");
+  const icon = document.querySelector(".hamburger-icon");
+  menu.classList.toggle('open');
+  icon.classList.toggle('open');
 
+  // Přidání akce pro zavření menu po kliknutí na odkaz
+  const menuLinks = document.querySelectorAll('.menu-links a');
+  menuLinks.forEach(link => {
+      link.addEventListener('click', () => {
+          menu.classList.remove('open');
+          icon.classList.remove('open');
+      });
+  });
 }
 
 // logoClickToMainPage
