@@ -87,6 +87,7 @@
   }
   .hamburger-icon {
       display: flex;
+      
   }
 
   .detailBox h1{
@@ -359,7 +360,7 @@
 
     .hamburger-icon{
         padding: 0;
-        top: 40px;
+        top: 34px;
         right: 55px;
     }
 
@@ -368,16 +369,13 @@
     }
 
 
-    .spaceBetween{
-        display: none;
-        flex-shrink: 10;
-        width: 1px;
-    }
+    
 
     .logo{
       margin-left: 20px;
       min-width: 195px;
       justify-content: flex-start;
+      margin-top: 23px;
     }
 
     /* .logo h3{

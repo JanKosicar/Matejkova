@@ -118,6 +118,14 @@ header{
   overflow-x: hidden;
 }
 
+.menu-links.open + .mainPage header::after {
+  opacity: 0; /* Skryje obrázek rakety, když je menu otevřené */
+}
+
+.menu-links:not(.open) + .mainPage header::after {
+  opacity: 1; /* Zobrazí obrázek rakety, když je menu zavřené */
+}
+
 
 .containerFluid{
   margin: 33px 0 0 0;
@@ -125,25 +133,21 @@ header{
 
 .navbar{
   display: flex;
-  justify-content: center;
+
   flex-direction: row;
   z-index: 999;
   position: relative;
   /* justify-content: space-between; */
 }
 
-.spaceBetween{
-  width: 31%;
-  flex-shrink: 1;
-  
-}
+
 
 .navbarHidden{
   display: flex;
   justify-content:center;
   flex-direction: row;
   z-index: 100;
-  position: relative;
+  /* position: relative; */
   
   align-content: center;
 }
@@ -234,12 +238,12 @@ header{
   width: 30px;
   cursor: pointer;
   display: none;
-  padding: 0 200px 0 200px;
+  /* padding: 0 200px 0 200px; */
   z-index: 1000;
-  margin-top: 10px;
-  position: fixed;
+  /* margin-top: 10px; */
+  position: absolute;
   right: max(10vw, 70px);
-  top: 100px;
+  top: 14px;
 }
 
 .hamburger-icon span {
@@ -266,6 +270,10 @@ header{
 
 }
 
+.menu-links.open::before {
+  opacity: 1; 
+}
+
 .menu-links::before{
   content: "";
   position: fixed;
@@ -275,10 +283,12 @@ header{
   height: 1450px;
   background: url('../img/Raketa.svg') no-repeat; 
   background-size: contain;
-  z-index: 999;
-  opacity: 1;
+  z-index: 5;
+  opacity: 0;
   overflow-x: hidden;
 }
+
+
 
 .menu-links li:last-child a {
   font-size: 25px;
@@ -312,6 +322,7 @@ header{
   max-height: 100vh;
   z-index: 999;
   font-size: 38px;
+  z-index: 10;
 }
 
 .hamburger-icon span{
@@ -1278,7 +1289,7 @@ padding-bottom: 20px;
   margin-left: 30px;
   color: inherit;
   text-decoration: inherit;
-  margin-top: ;
+  margin-top: 0px;
 }
 
 
