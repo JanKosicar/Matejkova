@@ -3,7 +3,7 @@
 
 /* 1600px + */
 
-@media screen and (min-width: 1450px){
+@media screen and (min-width: 1600px){
 
     /*Doctors office  section 1600+*/
 
@@ -68,7 +68,20 @@
     #ordinancePhoto :nth-of-type(1){
         margin-left: 0;
     }  
+    
+    /* Cenik page 1600+ */
 
+    .priceListContainer{
+        margin-left: 390px;
+    }
+
+      /* registrace.html 1600+ */
+
+      .registracePage h1,
+    .registracePage  p,
+    .listOfInsuranceCompanies div{
+        margin-left: 390px;
+    }
 
 }
 
@@ -310,15 +323,13 @@
         white-space: nowrap;
     }
 
-    /* Cenik page */
+    /* Cenik page 1250- */
 
     .priceListContainer{
         margin-left: 70px;
     }
 
-
-    /* Cenik page 1250- */
-
+    
     .steamer{
         bottom: 150px ;
     }

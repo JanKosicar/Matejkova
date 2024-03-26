@@ -1663,6 +1663,11 @@ footer{
   margin-left: 40px;
 }
 
+
+.vybaveniPage .footerSignature{
+  padding-top: 45px;
+}
+
 /* aktualityPage */
 .aktualityPage{
   background-color: #C6E5CD;
