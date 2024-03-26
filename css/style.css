@@ -7,7 +7,7 @@ html{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    /* outline: 1px solid red; */
+    outline: 1px solid red;
   }
 
 body{
@@ -1475,28 +1475,59 @@ footer{
   color: #EABF7B;
   right: 0;
   position: absolute;
-  margin-right: 4.8%;
-  margin-top: 6px;
+  margin-right: 70px;
+  bottom: 19px;
 }
+
+
 
 /* cenik.html */
 
 .priceListContainer{
-  margin-left: 10.4%;
+  margin-left: 150px;
 }
 
 .priceList{
   height: 330px;
-  width: 935px;
+
   margin-top: 40px;
   border-collapse: collapse;
   border-radius: 22px;
   overflow: hidden;
+  margin-bottom: 30px;
 }
 
-.priceList td{
-  margin-left: 40px;
+.priceList td:nth-child(1) {
+  padding-left: 40px;
+  min-width: 700px;
+  vertical-align: top;
 }
+
+.priceList td:nth-child(2){
+  padding-left: 70px;
+  min-width: 100px;
+  vertical-align: top;
+}
+
+.validity{
+  font-size: 16px;
+  
+}
+
+.steamer{
+  position: absolute;
+  right: 2px;
+  height: 170px;
+  width: auto;
+  z-index: -1;
+  bottom: 190px;
+}
+
+.footerSignature{
+  position: relative;
+  padding-top: 270px;
+}
+
 
 /* registrace.html */
 

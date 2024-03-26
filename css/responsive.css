@@ -309,6 +309,21 @@
     .footer > p {
         /* white-space: nowrap; */
     }
+
+    /* Cenik page */
+
+    .priceListContainer{
+        margin-left: 70px;
+    }
+
+
+    /* Cenik page 1250- */
+
+    .steamer{
+        bottom: 150px ;
+    }
+
+   
     
 }
 
@@ -800,6 +815,34 @@
         font-size: 17px;
       }
 
+      /* Cenik page 780- */
+
+    .priceListContainer{
+        margin-left: 20px;
+    }
+
+    .priceList td{
+        font-size: 17px;
+    }
+
+    .priceList td:nth-child(1) {
+        padding-left: 20px;
+        min-width: 600px;
+      }
+
+    .priceList td:nth-child(2){
+        padding-left: 30px;
+        min-width: 70px;
+    }
+
+    .steamer{
+        display: none;
+    }
+
+    .footerSignature{
+        position: relative;
+        padding-top: 130px;
+      }
 
 }
 
