@@ -307,7 +307,7 @@
     }  
 
     .footer > p {
-        /* white-space: nowrap; */
+        white-space: nowrap;
     }
 
     /* Cenik page */
@@ -323,9 +323,36 @@
         bottom: 150px ;
     }
 
-   
+    /* registrace.html 1250- */
+
+    .registracePage h1,
+    .registracePage  p,
+    .listOfInsuranceCompanies div{
+        margin-left: 70px;
+    }
+
+    .registracePage .phone{
+        margin-left: 55px;
+        margin-bottom: 25px;
+    }
+
+    .registracePage .contact{
+        
+        flex-direction: column;
+        align-items: flex-start;
+        margin-bottom: 101px;
+    }
+
+    .registracePage .email{
+        margin-left: 65px;
+    }
     
+    .registracePage p{
+        max-width: 80vw;
+    }
+
 }
+
 
 @media only screen and (max-width: 1080px){
     .mainContact{
@@ -817,9 +844,7 @@
 
       /* Cenik page 780- */
 
-    .priceListContainer{
-        margin-left: 20px;
-    }
+    
 
     .priceList td{
         font-size: 17px;
@@ -842,6 +867,70 @@
     .footerSignature{
         position: relative;
         padding-top: 130px;
+      }
+
+      /* registrace.html 780- */
+
+      .registracePage h1,
+    .registracePage  p,
+    .listOfInsuranceCompanies div{
+        margin-left: 20px;
+    }
+
+    .registracePage h1{
+        margin-bottom: 25px;
+    }
+
+      .registracePage  p{
+        max-width: 80vw;
+        font-size: 17px;
+        margin-bottom: 37px;
+      }
+
+      
+
+      .registracePage .phone img{
+        width: 86px;
+        height: auto;
+        margin-right: 10px;
+        
+      }
+
+      .registracePage .contact a{
+        font-size: 30px;
+      }
+      
+
+      .registracePage .email img{
+        width: 85px;
+        height: auto;
+        margin-right: 15px;
+      
+      }
+    
+      .registracePage .email{
+        margin-left: 20px;
+      }
+
+      .registracePage .phone{
+        margin-left: 20px;
+      }
+
+      .listOfInsuranceCompaniesContainer span{
+        font-size: 25px;
+      }
+
+      .listOfInsuranceCompanies{
+        padding-top: 42px;
+        margin-top: 0px;
+      }
+
+      .listOfInsuranceCompanies table{
+        font-size: 17px;
+      }
+
+      .pedoBear{
+        display: none;
       }
 
 }
@@ -890,10 +979,4 @@
         margin-left: 0px;
       }  
 }
-
-
-
-
-
-
 

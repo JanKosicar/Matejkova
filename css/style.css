@@ -7,7 +7,7 @@ html{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    outline: 1px solid red;
+    /* outline: 1px solid red; */
   }
 
 body{
@@ -1523,7 +1523,7 @@ footer{
   bottom: 190px;
 }
 
-.footerSignature{
+.cenikPage .footerSignature{
   position: relative;
   padding-top: 270px;
 }
@@ -1581,9 +1581,9 @@ footer{
 
 .registracePage .phone a:hover,
 .registracePage .email a:hover{
-  font-size: 45px;
   
-  color: #C6E5CD;
+  
+  text-decoration: underline;
 }
 
 .registracePage .email{
@@ -1612,7 +1612,7 @@ footer{
 }
 
 .listOfInsuranceCompanies div{
-  margin-left: 10.4vw;
+  margin-left: 150px;
   z-index: 100;
 }
 
@@ -1628,6 +1628,11 @@ footer{
 .registracePage tr :nth-of-type(2){
   max-width: 500px;
 }
+
+.registracePage .footerSignature{
+  padding-top: 50px;
+}
+
 
 /* vybaveniPage */
 
