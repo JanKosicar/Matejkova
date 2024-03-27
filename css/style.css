@@ -1627,6 +1627,7 @@ footer{
 
 .registracePage tr :nth-of-type(2){
   max-width: 500px;
+  margin-left: 25px;
 }
 
 .registracePage .footerSignature{
@@ -1713,15 +1714,17 @@ footer{
   display: flex;
   flex-direction: row;
   align-items: center;
-  margin: 0  11.7vw 75px 0;
+  margin: 0 150px 75px 0;
   padding-top: 80px;
   flex-basis: auto;
   justify-content: space-between;
 }
 
 .ourServices h2{
-  margin: 0 0 0 10.4vw;
+  margin: 0 25.3vw 0 150px;
   line-height: 1;
+  font-size: 65px;
+  min-width: 450px;
 }
 
 
@@ -1729,6 +1732,7 @@ footer{
   background-color: #FFEDA3;
   font-size: 30px;
   width: 322px;
+  min-width: 322px;
   height: 69px;
   border-radius: 35px;
   display: flex;
@@ -1737,11 +1741,20 @@ footer{
   text-decoration: none;
   text-align: center;
   justify-content: center;
+  
 }
 
+
+
 .ourServices :nth-of-type(2):hover{
-  background-color: #FFFCF0;
-  text-decoration: underline;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  
+}
+
+.ourServices div a{
+  color: inherit;
+  text-decoration: inherit;
 }
 
 .offeredServicesContainer a{
@@ -1750,12 +1763,13 @@ footer{
 }
 
 .offeredServicesContainer{
-  margin-left: 11.6vw;
+  margin-left: 176px;
 }
 
 .offeredServicesContainer ul{
   list-style-position: outside;
   list-style: none;
+  text-indent: -0.4em;
 }
 
 .offeredServicesContainer li{

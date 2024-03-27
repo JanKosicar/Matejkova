@@ -362,6 +362,23 @@
         max-width: 80vw;
     }
 
+    /* sluzby page 1250- */
+
+    .ourServices h2{
+        margin: 0 0 0 70px;
+        
+        min-width: 250px;
+    }
+
+    .ourServices{
+        align-items: flex-start;
+    }
+
+    .offeredServicesContainer{
+        margin-left: 96px;
+      }
+
+      
 }
 
 
@@ -944,6 +961,50 @@
         display: none;
       }
 
+      /* Sluzby page 780- */
+
+      .ourServices h2{
+        font-size: 55px;
+        margin: 0 150px 0 20px;
+        min-width: 200px;
+      }
+
+      .offeredServicesContainer li{
+        font-size: 17px;
+      }
+
+      .ourServices :nth-of-type(2){
+        width: 178px !important;
+        max-width: 178px;
+        min-width: 178px;
+        max-height: 38px;
+        /* top: 20px;
+        right: 30px;
+        position: absolute; */
+       }
+
+       .ourServices div a{
+        font-size: 17px;
+       }
+
+       .offeredServicesContainer{
+        margin-left: 46px;
+      }
+
+      .offeredServicesContainer li{
+        margin-bottom: 15px;
+        margin-right: 20px;
+      }
+
+      .sluzbyPage .footerSignature{
+        padding-top: 45px;
+        
+      }
+
+      .sluzbyPage .marathonSign{
+        margin-right: 20px;
+      }
+
 }
 
 @media only screen and (max-width: 600px){
@@ -988,6 +1049,29 @@
 
     #ordinancePhoto :nth-of-type(1){
         margin-left: 0px;
-      }  
+      } 
+      
+    /* Sluzby page */
+
+    .ourServices{
+        justify-content: flex-end;
+    }
+
+    .ourServices :nth-of-type(2){
+        position: absolute;
+        right: 20px;
+        /* margin-bottom: 150px; */
+    }
+
+    /* .sluzbyPage main div{
+        position: relative;
+    } */
+
+    .ourServices h2{
+        font-size: 55px;
+        margin: 0 0 0 20px;
+        min-width: 200px;
+        margin-top: 60px;
+      }
 }
 
